@@ -7,7 +7,7 @@ Blog ve kişisel web siteleri için gereksiz hosting ücretleri ödemeden dosyal
 Settings butonuna tıklayarak Github Pages alanına gelelim. Source kısmında otomatik olarak None seçeneği seçilidir, main olarak değiştirelim ve save butonuna tıklayalım. 
 Bu işlemleri gerçekleştirdikten sonra artık <username>.github.io/<repo-name> url'sine girdiğimizde bizi ReadMe.md sayfasının karşılaması gerekmektedir. 
 
-Blog alt yapısı olarak Jeklyy kullanmak için bilgisayarımıza Ruby ve Jeklyy'i kurmamız gerekmektedir. Windowsta hızlıca kurmak için RubyInstaller'ı kuralım. RubyInstaller 2.4 ve üzerini kurabilirsiniz. (Alt sürümlerde DevKit'i manuel olarak kurmak gerekiyor) RubyInstaller kurulumu tamamlandıktan sonra açılan terminalde 1'i seçerek işlem tamamlanana kadar bekleyelim. Daha sonra Başlat Menüsünden terminali açarak gem install jekyll bundler komutunu çalıştıralım.
+Blog alt yapısı olarak Jeklyy kullanmak için bilgisayarımıza Ruby ve Jeklyy'i kurmamız gerekmektedir. Windowsta hızlıca kurmak için RubyInstaller'ı kuralım. RubyInstaller 2.4 ve üzerini kurabilirsiniz. (Alt sürümlerde DevKit'i manuel olarak kurmak gerekiyor) RubyInstaller kurulumu tamamlandıktan sonra açılan terminalde 1'i seçerek işlem tamamlanana kadar bekleyelim. Daha sonra Başlat Menüsünden terminali açarak gem install jekyll bundler komutunu çalıştırarak Jekyll ve Bundler'ı yükleyelim. 
 
 
 Visual Studio Code'u açarak oluşturduğumuz Github Reposunu klonlayalım.
