@@ -7,4 +7,10 @@ Blog ve kişisel web siteleri için gereksiz hosting ücretleri ödemeden dosyal
 Settings butonuna tıklayarak Github Pages alanına gelelim. Source kısmında otomatik olarak None seçeneği seçilidir, main olarak değiştirelim ve save butonuna tıklayalım. 
 Bu işlemleri gerçekleştirdikten sonra artık <username>.github.io/<repo-name> url'sine girdiğimizde bizi ReadMe.md sayfasının karşılaması gerekmektedir. 
   
-Jekyll kurmak için Visual Studio Code programını açalım.
+Visual Studio Code'u açarak oluşturduğumuz Github Reposunu klonlayalım.
+
+VSCode anasayfasında Clone Repository linkine tıklayarak repo linkini yapıştıralım. Daha önce VSCode üzerinde giriş yaptığınız hesabınız yoksa size aşağıdaki uyarı gelecektir Allow butonuna basarak github bağlantısı kurabilirsiniz. 
+
+
+
+
