@@ -14,6 +14,8 @@ Visual Studio Code'u açarak oluşturduğumuz Github Reposunu klonlayalım.
 
 VSCode anasayfasında Clone Repository linkine tıklayarak repo linkini yapıştıralım. Daha önce VSCode üzerinde giriş yaptığınız hesabınız yoksa size aşağıdaki uyarı gelecektir Allow butonuna basarak github bağlantısı kurabilirsiniz. 
 
+Klonunu oluşturduğumuz projenin içerisinde terminali açarak jekyll new . --force komutu ile Jeklyy temasını yerel geliştirme ortamımıza ekleyelim. 
+
 
 
 
