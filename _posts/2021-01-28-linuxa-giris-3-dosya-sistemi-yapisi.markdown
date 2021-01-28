@@ -6,31 +6,29 @@ categories: linux
 sidebar: []
 ---
 
-Merhaba, bu yazımda sizlere Linux dosya sistemi yapısından, dosya yetkilerinden ve türlerinden bahseceğim.
-
 Linux Dosya Sistemi veya herhangi bir dosya sistemi genellikle, işletim sistemi altında bulunan ve verilerinizin bellekte konumlandırmasını işleyen bir katmandır; onsuz sistem hangi dosyanın nereden başlayıp nerede biteceğini bilemez. 
 
-## Linux Dosya Sistemi Türleri
+### Linux Dosya Sistemi Türleri
 
 Linux'u yüklemeye çalıştığınızda, Linux'un aşağıdaki gibi bir çok dosya sistemi sunduğunu göreceksiniz. 
 
-*Ext:* Sınırlamalar nedeniyle kullanılmayan eski bir sistemdir.
+**Ext:** Sınırlamalar nedeniyle kullanılmayan eski bir sistemdir.
 
-*Ext2:* 2 TB'lık verileri yönetmeye izin veren ilk Linux dosya sistemidir.
+**Ext2:** 2 TB'lık verileri yönetmeye izin veren ilk Linux dosya sistemidir.
 
-*Ext3:* Ext2'nin yükseltilmiş bir sürümüdür. Ext3'ün en büyük dezavantajı sunucuları desteklememesidir. 
+**Ext3:** Ext2'nin yükseltilmiş bir sürümüdür. Ext3'ün en büyük dezavantajı sunucuları desteklememesidir. 
 
-*Ext4:* Tüm dosya sistemleri arasında en hızlı olan dosya sistemidir ve SSD diskler için çok uyumlu bir seçenektir. Linux dağıtımlarında varsayılan olarak gelen dosya sistemidir.
+**Ext4:** Tüm dosya sistemleri arasında en hızlı olan dosya sistemidir ve SSD diskler için çok uyumlu bir seçenektir. Linux dağıtımlarında varsayılan olarak gelen dosya sistemidir.
 
-*JFS:* IBM tarafından geliştirilen eski bir dosya sistemidir. Önceleri büyük ve küçük dosyalar için güzel bir şekilde çalışırken, daha sonrasında dosyaların bozulmuş olduğu bir sistemdir. 
+**JFS:** IBM tarafından geliştirilen eski bir dosya sistemidir. Önceleri büyük ve küçük dosyalar için güzel bir şekilde çalışırken, daha sonrasında dosyaların bozulmuş olduğu bir sistemdir. 
 
-*XFS:* Eski bir dosya sistemidir, küçük dosyalarla yavaş şekilde çalışmaktadır. 
+**XFS:** Eski bir dosya sistemidir, küçük dosyalarla yavaş şekilde çalışmaktadır. 
 
-*Btrfs:* Oracle tarafından geliştirilmiştir. İyi bir performansa sahiptir fakat bazı linux dağıtımları ile uyumlu çalışmamaktadır.
+**Btrfs:** Oracle tarafından geliştirilmiştir. İyi bir performansa sahiptir fakat bazı linux dağıtımları ile uyumlu çalışmamaktadır.
 
 ![Linux Dosya Sistemi Türleri](https://i.ibb.co/JFV6WL8/dosyaturleri.png)
 
-## Dizin Yapısı
+### Dizin Yapısı
 
 Linux dosya sistemi, root dizininden başlayarak ağaç benzeri bir hiyerarşik yapıya sahiptir. Dizinler, alt dizinler ve veri dosyalarından oluşur. 
 
