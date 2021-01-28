@@ -6,8 +6,9 @@ categories: linux
 sidebar: []
 ---
 
+Temel Linux Komutlarına devam ediyoruz. Önceki yazımı okumadıysanız okumanızı tavsiye ederim.
 
-Bu yazımda birinci yazımın devamı olarak linuxta kullanılan temel komutlardan bahsedeceğim.
+<!--more-->
 
 ### $ du komutu
 

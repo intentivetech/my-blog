@@ -8,6 +8,8 @@ sidebar: []
 
 Linux Dosya Sistemi veya herhangi bir dosya sistemi genellikle, işletim sistemi altında bulunan ve verilerinizin bellekte konumlandırmasını işleyen bir katmandır; onsuz sistem hangi dosyanın nereden başlayıp nerede biteceğini bilemez. 
 
+<!--more-->
+
 ### Linux Dosya Sistemi Türleri
 
 Linux'u yüklemeye çalıştığınızda, Linux'un aşağıdaki gibi bir çok dosya sistemi sunduğunu göreceksiniz. 

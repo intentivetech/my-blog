@@ -7,13 +7,15 @@ sidebar: []
 ---
 
 
-Merhaba, bu yazımda sizlere Linux ile ilgili bilmemiz gereken temel kavramlardan ve terminalde kullandığımız temel komutlardan bahsedeceğim.
 
-![Linux](https://i.ibb.co/zrm5BGg/linux.png)
 
 # Linux Nedir? 
 
+![Linux](https://i.ibb.co/zrm5BGg/linux.png)
+
 Windows, iOS ve Mac OS gibi Linux bir işletim sistemidir. Basitçe söylemek gerekirse, işletim sistemi, yazılımınız ile donanımınız arasındaki iletişimi yönetir. İşletim sistemi  olmadan, yazılım çalışmaz. Çoğu zaman linux kullandığımızın farkında bile olmayız. Örneğin dünyadaki en popüler platformlardan biri olan Android, gücünü Linux'tan almaktadır. Akıllı telefonlardan arabalara, süper bilgisayarlara ve ev aletlerine, ev masaüstü bilgisayarlarından kurumsal sunuculara kadar, Linux işletim sistemi her yerde.
+
+<!--more-->
 
 [Sanal Makineye Linux İşletim Sistemi nasıl kurulur?](http://yapbenzet.kocaeli.edu.tr/virtualbox-ubuntukurulumu/) [Windowsun yanına Centos Kurulumu](https://tr.compozi.com/how-install-centos-7-alongside-windows-10-dual-boot)
 
