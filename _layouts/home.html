@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         <div class="pagination">
         <!-- Post list links -->
         <ul class="post-list">
-            {% for post in site.posts %}
+            { % for post in site.posts % }
             <li>  
             <h2 class="post-title"><a class="post-link" href="{{ post.url }}">
                 {{ post.title }}

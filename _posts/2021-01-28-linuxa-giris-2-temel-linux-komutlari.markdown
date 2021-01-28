@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Linux’a Giriş — 2 — Temel Linux Komutları"
-date:   "28 Ocak 2021"
+date:   2021-01-28 11:04:24 +0300
 categories: linux
 sidebar: []
 ---
