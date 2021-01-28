@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Linux’a Giriş — 3 — Dosya Sistemi Yapısı"
-date:   2021-01-28 11:41:09 +0300
+date:   "28 Ocak 2021"
 categories: linux
 sidebar: []
 ---

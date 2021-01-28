@@ -369,8 +369,11 @@ document.addEventListener('DOMContentLoaded', function(event) {
                 </a>
             </h2>
             <div class="post-meta">
-                <span class="post-date"><i class="fa fa-calendar"></i> Jan 28, 2021</span>
-                <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 4 mins</span>
+                <span class="post-date"><i class="fa fa-calendar"></i> {{ post.date }} </span>
+                <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i>   
+                    {   % assign words = include.content | strip_html | number_of_words %  }
+                    {{ words | divided_by: 180 | plus: 1 }} min read.
+                </span>
             </div>
             <p class="post-excerpt">
                 {{ post.excerpt }}
