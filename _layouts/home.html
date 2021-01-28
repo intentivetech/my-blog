@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
             <div class="post-meta">
                 <span class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date_to_long_string: "ordinal" }} </span>
                 <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i>   
-                    {% include read-time.html content=post.content %}
+                    {% include read-time.html content= post.content %}
                 </span>
             </div>
             <p class="post-excerpt">
