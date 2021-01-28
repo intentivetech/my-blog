@@ -64,15 +64,15 @@ history -c
 history > dizin/28.01.2021
 ```
 
- Örneğin hergün yazdığımız komutları kaydetmek istediğimizi düşünelim. Bunun için şöyle bir komut yazabiliriz. Bir dizin oluşturup içerisinde oluşturduğumuz dosyaya historynin çıktılarını atabiliriz. 
+Örneğin hergün yazdığımız komutları kaydetmek istediğimizi düşünelim. Bunun için şöyle bir komut yazabiliriz. Bir dizin oluşturup içerisinde oluşturduğumuz dosyaya historynin çıktılarını atabiliriz. 
 
  Geçmişte yazdığımız bir komutu arıyorsak history yazdıktan sonra CTRL+R ye basarak aramak istediğimiz komutun belirli bir kısmını yazarsak bulabiliriz.
 
  history komutunu yazdıktan sonra komutların başında belirli numaralar olduğunu farketmişsinizdir. Bu numaralar ile de bir komutu çalıştırabiliriz. Örneğin 65 numaralı komutumuz ls olsun ve bunu çalıştıralım. !65
 
- ### $ head komutu 
+### $ head komutu 
 
- *head* komutu, kendisine verilen dosyaların ilk bölümünün standart giriş yoluyla çıktısını almak için kullanılmaktadır.
+*head* komutu, kendisine verilen dosyaların ilk bölümünün standart giriş yoluyla çıktısını almak için kullanılmaktadır.
 
 ```
 head dosyaadı
