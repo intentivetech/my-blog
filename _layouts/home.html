@@ -362,6 +362,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         <div class="pagination">
         <!-- Post list links -->
         <ul class="post-list">
+
             { % for post in site.posts % }
             <li>  
             <h2 class="post-title"><a class="post-link" href="my-blog/{{ post.url }}">
@@ -369,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
                 </a>
             </h2>
             <div class="post-meta">
-                <span class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date: "%-d %B %Y"  }} </span>
+                <span class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date_to_long_string: "ordinal" }} </span>
                 <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i>   
                     {% include read-time.html content=post.content %}
                 </span>
@@ -377,7 +378,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
             <p class="post-excerpt">
                 {{ post.excerpt | markdownify | strip_html | truncatewords: 50  }}
             </p>
-            <div class="post-tags"></div>
+            <div class="post-tags">{{ post.categories }}</div>
             </li>
             {% endfor %}
         </ul>
