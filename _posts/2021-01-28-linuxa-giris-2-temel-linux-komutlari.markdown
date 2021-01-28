@@ -122,7 +122,7 @@ cat > dosyaadı
 
 **NOT:** *cat* komutu yerine başka komutlarda deneyebilirsiniz. Örneğin *ls* > dosyaadı komutunu yazarsanız *ls* çıktısını bir dosyaya aktardığını görebilirsiniz.
 
-## > 
+## >> 
 
 *>* kullanırken içerisi dolu olan bir dosyaya yazı yazdığımızda içerisinin silindiğinden bahsetmiştim. Bunu engellemek için *>>* kullanılmaktadır. Yazdıklarınızı dosyanın en alt kısmına ekler.
 
