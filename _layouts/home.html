@@ -392,7 +392,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     <ul>
         <li>
         <a href="{{ site.baseurl }}/index.html">
-            Tüm Kategoriler<span>site.categories.</span>
+            Tüm Kategoriler<span>site.categories[category].size</span>
         </a>
         </li>
         {% for cat in site.categories %}
@@ -400,7 +400,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
             <a href="{{ site.baseurl }}/categories.html#h-linux">
             {{ cat[0] }} 
             
-            <span>({{ cat[1].size }})</span>
+            <span>({ cat[1].size })</span>
             </a>
           </li>
         {% endfor %}
