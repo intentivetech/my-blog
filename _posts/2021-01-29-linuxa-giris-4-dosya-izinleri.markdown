@@ -43,11 +43,101 @@ Dosyanın izinlerini incelediğimizde çıkarılacak bilgiler:
 
 Dosyanın sahibinin izinlerini inceleyelim. Görüldüğü üzere dosyanın sahibinin yetkileri **rw-**'tir. Buradaki - dosyanın sahibinin bu dosyayı çalıştırmaya izni olmadığı anlamına gelir. Yada diğer kullanıcıların izinlerini incelediğinizde (**r- -**) sadece okuma izni olduğunu görebilirsiniz. Elbette bu izinleri değiştirmek mümkün. Şimdi gelin dosya izinlerini nasıl değiştirebileceğimizi öğrenelim.
 
-# Dosya İzinlerini Değiştirme
+## Dosya İzinlerini Değiştirme
+
+Bir dosya veya dizinin izin ayarlarını değiştirmek için **chmod** komutu kullanılır. 
+
+Basit kullanımı bu şekildedir: 
+
+```
+chmod izin dosyaadı
+```
+
+İzni tanımlamanın iki yolu vardır: 
+
+1. Sembolik karakterleri kullanma 
+2. Sayısal gösterim yöntemini kullanma
+
+
+# Sembolik Karakterleri Kullanma
+
+Sembolik karakterleri kullanarak izin ayarlarını belirtmek için, kullanıcı **(u)**, grup **(g)** ve diğer kullanıcılar **(o)** için erişilebilirliği tanımlamanız gerekir.
+
+Dosyaya herkes için okuma, yazma, çalıştırma yetkisi vermek için:
+
+```
+chmod u=rwx,g=rwx,o=rwx dosyaadı
+```
+
+Örneğin test.txt dosyasının izinlerini belirtilen şekilde ayarlayalım.
+
+- Dosyanın sahibi için okuma ve yazma izni
+- Kullanıcı grupları için okuma izni
+- Diğer kullanıcılar için okuma izni
+
+```
+chmod u=rw,g=r,o=r test.txt
+```
+
+
+# Sayısal Gösterim Yöntemini Kullanma
+
+İzni belirtmenin başka bir yolu, sayısal gösterim yöntemini kullanmaktır. Bu seçenek önceki yöntem kadar basit olmasa da daha hızlıdır.
 
 ![Dosya izinlerini değiştirme](https://i.ibb.co/hKcTT74/permissions.png)
 
+```
+rwx rwx rwx = 111 111 111
+rw- rw- rw- = 110 110 110
+rwx --- --- = 111 000 000
 
+rwx = 111 = 7
+rw- = 110 = 6
+r-x = 101 = 5
+r-- = 100 = 4
+```
+
+Her kategori (kullanıcı, grup, sahip) için izin tanımlamanız gerektiğinden, komut üç sayı içerecektir. Örneğin, chmod u = rw, g = r, o = r test.txt komutu ile sembolik olarak yapılandırdığımız test.txt dosyasına bakalım. 
+
+Aynı izin ayarları, aşağıdaki komutla sayısal gösterim yöntemi kullanılarak tanımlanabilir:
+
+```
+chmod 644 test.txt
+```
+
+![Sayısal Gösterim](https://i.ibb.co/XYh1jkY/say-salgosterim.jpg)
+
+## Dosya ve Grup Sahipliğini Değiştirme
+
+Dosya izinlerini değiştirmenin yanı sıra, kullanıcı dosya sahipliğini veya hatta grup sahipliğini değiştirmeyi gerektiren bir durumla karşılaşabilirsiniz. Dosya veya dizin sahipliğini değiştirebilmek için *root* kullanıcısı olmak gerekir. *root* kullanıcısı olabilmek için çalıştırdığınız komutların başına *sudo* komutunu yazmanız gerekir. 
+
+# Dosya Sahipliğini Değiştirme 
+
+*chown*, change owner kelimelerinin kısaltılmasıdır ve dosya sahibini değiştirmek için kullanılır. Kullanımı aşağıdaki gibidir: 
+
+```
+chown kullanıcı dosyaadı
+```
+
+Örneğin test.txt dosyasının sahibini *firstuser* kullanıcı olarak atayalım.
+
+```
+sudo chown firstuser test.txt
+```
+
+# Grup Sahipliğini Değiştirme
+
+*chgrp* change group kelimelerinin kısaltılmasıdır ve grup sahipliğini değiştirmek için kullanılır. Kullanımı aşağıdaki gibidir: 
+
+```
+chgrp grupadı dosyaadı
+```
+
+Örneğin test.txt dosyasının grup sahipliğini *firstgroup* grubu olarak atayalım.
+
+```
+sudo chgrp firstgroup test.txt
+```
 
 
 
