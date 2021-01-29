@@ -364,7 +364,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         <ul class="post-list">
             {% for post in site.posts %}
             <li>  
-            <h2 class="post-title"><a class="post-link" href="{{ post.url }}">
+            <h2 class="post-title"><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
                 {{ post.title }}
                 </a>
             </h2>
