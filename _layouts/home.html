@@ -391,17 +391,19 @@ document.addEventListener('DOMContentLoaded', function(event) {
     <div class="common-list">
     <ul>
         <li>
-        <a href="/my-blog/index.html">
-            All<span>3</span>
+        <a href="{{ site.baseurl }}/index.html">
+            Tüm Kategoriler<span>site.categories.</span>
         </a>
         </li>
-
-        
-        <li>
-            <a href="/my-blog/categories.html#h-linux">
-            linux <span>3</span>
+        {% for cat in site.categories %}
+          <li>
+            <a href="{{ site.baseurl }}/categories.html#h-linux">
+            {{ cat[0] }} 
+            
+            <span>({{ cat[1].size }})</span>
             </a>
-        </li>
+          </li>
+        {% endfor %}
         
     </ul>
     </div>
