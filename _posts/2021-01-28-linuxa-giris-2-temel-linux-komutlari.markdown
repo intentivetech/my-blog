@@ -4,6 +4,7 @@ title:  "Linux’a Giriş — 2 — Temel Linux Komutları"
 date:   2021-01-28 11:04:24 +0300
 categories: linux
 sidebar: []
+tags: linux temelkomutlar
 ---
 
 Temel Linux Komutlarına devam ediyoruz. Önceki yazımı okumadıysanız okumanızı tavsiye ederim.

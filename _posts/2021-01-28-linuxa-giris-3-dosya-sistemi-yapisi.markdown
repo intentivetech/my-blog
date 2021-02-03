@@ -4,6 +4,7 @@ title:  "Linux’a Giriş — 3 — Dosya Sistemi Yapısı"
 date:   2021-01-28 11:41:09 +0300
 categories: linux
 sidebar: []
+tags: linux dosyasistemi
 ---
 
 Linux Dosya Sistemi veya herhangi bir dosya sistemi genellikle, işletim sistemi altında bulunan ve verilerinizin bellekte konumlandırmasını işleyen bir katmandır; onsuz sistem hangi dosyanın nereden başlayıp nerede biteceğini bilemez. 

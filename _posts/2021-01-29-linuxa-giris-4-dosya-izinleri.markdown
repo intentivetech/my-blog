@@ -2,8 +2,9 @@
 layout: post
 title:  "Linux’a Giriş — 4 — Dosya ve Dizin İzinleri"
 date:   2021-01-29 09:01:22 +0300
-categories: linux
+categories: linux 
 sidebar: []
+tags: linux izinler
 ---
 
 Linux gibi Unix benzeri işletim sistemleri, yalnızca çoklu görev değil aynı zamanda çok kullanıcılı olmaları bakımından diğer bilgi işlem sistemlerinden farklıdır. Bu tam olarak ne anlama geliyor? Bu, bilgisayarı aynı anda birden fazla kullanıcının çalıştırabileceği anlamına gelir. Örneğin, bilgisayar bir ağa veya internete bağlıysa, uzak kullanıcılar ssh aracılığıyla oturum açabilir ve bilgisayarı çalıştırabilir.
