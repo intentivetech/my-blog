@@ -61,11 +61,11 @@ Verimizin şifrelendiğini anlayabilmek için Shared Preferences dosyasının i�
 
 Normal SharedPreferences kullansaydık karşılaşacağımız XML çıktısı aşağıdaki gibi olacaktı.
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/b2gYTQ5/encryp1.png" alt="encryp1" border="0"></a>
+[Encrypted1](https://i.ibb.co/b2gYTQ5/encryp1.png)
 
 Fakat EncryptedSharedPreferences kullanıldığında hem key değeri hem de value değeri şifrelenmiş olur. Key-value verilerinin şifrelendiğini ve depolandığını görebilirsiniz.
 
-<a href="https://ibb.co/4YSj3nT"><img src="https://i.ibb.co/MG1RQxV/encryp2.png" alt="encryp2" border="0"></a>
+[Encrypted2](https://i.ibb.co/MG1RQxV/encryp2.png)
 
 Key-value değerleri için keyset bulunmaktadır. Bu keysetler, Shared Preferences verilerini şifrelemek ve şifreleri çözmek için kullanılan kriptografik anahtarları içerir. Daha önce oluşturduğumuz Master Key, bu keysetleri şifrelemek için kullanılır.
 

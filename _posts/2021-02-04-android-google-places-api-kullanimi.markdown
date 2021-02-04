@@ -9,7 +9,7 @@ tags: android googleplacesapi autocomplate
 
 Merhabalar, bu yazımda sizlere Place Autocomplete API’yi projemize nasıl dahil edebileceğimizden bahsedeceğim.
 
-<a href="https://ibb.co/mRpwfcK"><img src="https://i.ibb.co/3TKqgCb/googleplaces1.png" alt="googleplaces1" border="0"></a>
+[Google Places Api](https://i.ibb.co/3TKqgCb/googleplaces1.png)
 
 Place Autocomplete, otomatik olarak mekan adı tamamlamayı sağlar. Kullanıcı herhangi bir arama yapmaya başladığı anda yerlerin bir listesini sunar.
 
@@ -147,7 +147,7 @@ public class AutocompleteExampleActivity extends AppCompatActivity {
 
  İşte bu kadar :)
 
-<a href="https://ibb.co/4mHKTZj"><img src="https://i.ibb.co/2nTWt7j/googleplaces2.png" alt="googleplaces2" border="0"></a>
+[Google Places Api2](https://i.ibb.co/2nTWt7j/googleplaces2.png)
 
 ## 2- AutoComplete Intent Kullanımı
 
@@ -299,6 +299,6 @@ public class AutocompleteExampleActivity extends AppCompatActivity {
 Projemizi çalıştırdığımızda uygulamaya ait ekran görüntüsü aşağıdaki gibi olacaktır.
 
 
-<a href="https://ibb.co/X4zDXt6"><img src="https://i.ibb.co/6Z48YFG/googleplaces3.png" alt="googleplaces3" border="0"></a>
+[Google Places Api 3](https://i.ibb.co/6Z48YFG/googleplaces3.png)
 
 Böylece Google Places API Place Autocomplete servisini nasıl kullanacağımızı öğrenmiş olduk. Daha fazla bilgi için [Google Maps dokümantasyonunu inceleyebilirsiniz.](https://developers.google.com/places/android-sdk/autocomplete)

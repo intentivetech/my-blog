@@ -114,6 +114,6 @@ class MainActivity : AppCompatActivity() {
 MainActivity içerisinden count değişkenine erişebilmek için View Model nesnesi oluşturmamız gerekir. Count değişkeninin değeri başlangıçta 0'dır ve butona tıklandığında getCount() methoduna erişilerek bu değer arttırılmaktadır. Count değişkeninde oluşan değişiklikleri gözlemlememiz gerekir. LiveData, count değişkeninin değerini gözlemler ve TextView’e atamamızı sağlar.
 Şimdi uygulamayı çalıştırıp test edebiliriz.
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/SXRdwLb/livedata.gif" alt="livedata" border="0"></a>
+[LiveData](https://i.ibb.co/SXRdwLb/livedata.gif)
 
 Gördüğünüz üzere ekranı döndürdüğümüzde count değeri değişmeyecektir. 
