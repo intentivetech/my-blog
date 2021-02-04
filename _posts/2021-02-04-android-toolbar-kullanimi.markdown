@@ -9,7 +9,7 @@ tags: android toolbar
 
 Merhabalar, bu yazımda sizlere toolbar oluşturmayı ve oluşturduğumuz toolbar içerisine menü elemanlarının nasıl eklendiğinden bahsedeceğim.
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/2ybn8nS/toolbar1.png" alt="toolbar1" border="0"></a>
+[Toolbar]("https://i.ibb.co/2ybn8nS/toolbar1.png")
 
 Öncelikle toolbarı ekleyeceğimiz activityi oluşturalım.
 
@@ -115,7 +115,7 @@ public class ToolbarActivity extends AppCompatActivity {
 
 Basit bir toolbar oluşturduk. Fakat henüz istediğimiz görüntüyü elde edemedik.
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/3Crzqzb/toolbar2.png" alt="toolbar2" border="0"></a>
+[Toolbar2]("https://i.ibb.co/3Crzqzb/toolbar2.png")
 
 Oluşturduğumuz toolbar içerisine menü ekleyelim. Menü eklemek için: **res -> Android resource file -> Resource type : Menu** seçeneğini seçerek dosyamıza bir isim verelim. Oluşturduğumuz dosya içerisine menü elemanlarını ekleyelim.
 
