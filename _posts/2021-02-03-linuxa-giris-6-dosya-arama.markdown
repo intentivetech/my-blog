@@ -4,7 +4,7 @@ title:  "Linux’a Giriş — 6 — Dosya Arama"
 date:   2021-02-03 10:13:22 +0300
 categories: linux 
 sidebar: []
-tags: linux dosyaarama findkomutu
+tags: linux dosyaarama find
 ---
 
 Kullanıcıların bir Linux makinesiyle ilk uğraşırken karşılaştıkları bir sorun, aradıkları dosyaların nasıl bulunacağıdır. *find* komutu sistem yöneticileri için güçlü araçlardan biridir. Dosya ve dizinleri izinlerine, türlerine, tarihlerine, sahipliklerine, boyutlarına ve daha fazlasına göre aramak için find komutunu kullanabilirsiniz.

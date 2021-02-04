@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Linux’a Giriş — 7 — Crontab Kullanımı"
-date:   2021-02-03 10:15:22 +0300
+title:  "Linux’a Giriş — 8 — Crontab Kullanımı"
+date:   2021-02-03 17:45:22 +0300
 categories: linux 
 sidebar: []
 tags: linux crontab

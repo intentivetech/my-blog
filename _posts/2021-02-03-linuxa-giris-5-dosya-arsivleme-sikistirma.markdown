@@ -4,7 +4,7 @@ title:  "Linux’a Giriş — 5 — Dosya Arşivleme ve Sıkıştırma"
 date:   2021-02-03 10:12:22 +0300
 categories: linux 
 sidebar: []
-tags: linux arşivleme sıkıştırma tarkomutu
+tags: linux arşivleme sıkıştırma tar
 ---
 
 
