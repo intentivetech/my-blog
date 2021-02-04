@@ -9,11 +9,11 @@ tags: android bottomnavigationbar
 
 Merhaba, Android Uygulamarı içerisinde basit bir alt menün nasıl oluşturulduğunu adım adım göstereceğim. Bottom Navigation Bar denilen alt menü elemanlarının 3‘ten az ve 5’ten fazla olmaması gerekir.
 
-[Bottom Navigation](https://i.ibb.co/8bSdrvn/bottomnav1.png)
+![Bottom Navigation](https://i.ibb.co/8bSdrvn/bottomnav1.png)
 
 Android Studio içerisinde aşağıdaki resimde gösterilen adımları takip ederek eklersek alt menü bizim için otomatik olarak oluşturulacaktır. Bizde Android Studio'nun bize sunduğu bu özellikleri kullanarak işlemleri gerçekleştirelim. MainActivity adında bir Bottom Navigation Activity oluşturalım.
 
-[Bottom Navigation](https://i.ibb.co/cFwvWqw/bottomnav2.png)
+![Bottom Navigation](https://i.ibb.co/cFwvWqw/bottomnav2.png)
 
 ## Fragment Oluşturma
 
@@ -21,7 +21,7 @@ Fragmentler Activityler gibi kullanıcı arayüzlerini oluştururlar. Fragmentle
 
 Projemize fragments adında paket ekleyelim. Paket eklemek için **New -> Package** seçeneğine tıklayarak paket adımızı girelim. İşlem yapacağımız sınıfları daha kolay bulabilmemiz için paketleri kullanmak gerekir. Şimdi paketin içerisine fragment ekleyebiliriz. Resimde görüldüğü gibi fragment oluşturmak için paket adının üzerine sağ tıklayarak **New -> Fragment -> Fragment(Blank)** seçeneğine tıklayarak fragment oluşturabiliriz. Her menü için ayrı fragment oluşturmamız gerekir. Bu örnekte 3 tane menü olduğu için üç tane fragment oluşturalım. (HomeFragment, ProfileFragment, AccountFragment)
 
-[Bottom Navigation](https://i.ibb.co/Zfgnfx2/bottomnav3.png)
+![Bottom Navigation](https://i.ibb.co/Zfgnfx2/bottomnav3.png)
 
 Her fragment aşağıdaki kodu içerecektir.
 
@@ -238,4 +238,4 @@ activity_main.xml dosyasının içerisini aşağıdaki şekilde değiştirelim v
 
 Artık projemizi çalıştırabiliriz :)
 
-[Bottom Navigation](https://i.ibb.co/dQS2bBf/bottomnav4.gif)
+![Bottom Navigation](https://i.ibb.co/dQS2bBf/bottomnav4.gif)

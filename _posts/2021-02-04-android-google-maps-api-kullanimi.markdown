@@ -13,45 +13,45 @@ Merhabalar bugün sizlere Google Maps API’yi uygulamamız içerisinde nasıl k
 
 Bildiğiniz üzere Google Maps dünyada en çok kullanılan haritalardan birisidir. Google Maps’i Android Projemizde kullanabilmek için öncellikle Google Developer Console adresinden bir key almamız gerekiyor.
 
-[Google Maps](https://i.ibb.co/1rSgJvN/googlemaps1.png)
+![Google Maps](https://i.ibb.co/1rSgJvN/googlemaps1.png)
 
 Bunun için öncellikle bir Gmail adresiyle giriş yapmak gerekiyor. Giriş yaptıktan sonra karşımıza çıkan sayfada bulunan **PROJE OLUŞTUR** yazısına tıklayalım.
 
-[Google Maps 2](https://i.ibb.co/Wxp8CMk/googlemaps2.png)
+![Google Maps 2](https://i.ibb.co/Wxp8CMk/googlemaps2.png)
 
 Projemiz için bir isim belirleyelim ve oluştur butonuna tıklayalım.
 
-[Google Maps 3](https://i.ibb.co/T0P39hc/googlemaps3.png)
+![Google Maps 3](https://i.ibb.co/T0P39hc/googlemaps3.png)
 
 Karşımıza çıkan sayfada **Maps SDK For Android**‘e tıklayalım ve etkinleştirelim.
 
-[Google Maps 4](https://i.ibb.co/1dBLMkj/googlemaps4.png)
+![Google Maps 4](https://i.ibb.co/1dBLMkj/googlemaps4.png)
 
 Solda bulunan menüye tıklayarak API’ler ve Hizmetler Sekmesinin altında bulunan Kontrol Paneline tıklayalım.
 
-[Google Maps 5](https://i.ibb.co/sysWKSW/googlemaps5.png)
+![Google Maps 5](https://i.ibb.co/sysWKSW/googlemaps5.png)
 
 Burada Kimlik bilgilerini oluştur tıkladığımızda karşımıza 3 seçenek çıkıyor. Buradan API Anahtarını seçelim. Bu şekilde API Anahtarını almış olduk. Projemizden sadece bizim bu API’ye erişebilmemiz için kısıtlama yapmamız gerekecektir. Anahtarı kısıtla butonuna tıklayalım.
 
-[Google Maps 4](https://i.ibb.co/Pz7jG16/googlemaps6.png)
+![Google Maps 4](https://i.ibb.co/Pz7jG16/googlemaps6.png)
 
 Artık uygulamamızı kısıtlayabileceğiz. Uygulama kısıtlamaları bölümünden Android Uygulamaları seçeneğini işaretleyelim. Uygulamamızın Paket Adı ve Fingerprint bilgilerimizle beraber satır bazında ekleme yapmamız gerekecek.
 
-[Google Maps 5](https://i.ibb.co/6m3BryQ/googlemaps7.png)
+![Google Maps 5](https://i.ibb.co/6m3BryQ/googlemaps7.png)
 
 SHA-1 Sertifikasını bulabilmek için Android Studiodaki Projemizi açarak sağ bölümde bulunan GRADLE penceresini açalım. **Proje Adı -> Tasks -> signingReport** seçtikten sonra signingReport’un üzerine tıkladığımızda bize SHA-1 değerini verir. Console’dan bu SHA-1 değerini kopyalayıp yapıştırabilirsiniz.
 
-[Google Maps 6](https://i.ibb.co/qDrzzHF/googlemaps8.png)
+![Google Maps 6](https://i.ibb.co/qDrzzHF/googlemaps8.png)
 
 Daha önceden oluşturduğunuz bir Android Studio Projesi varsa Paket Adına sağ tıklayıp **New -> Activity -> Gallery -> Google Maps Activity**‘i seçerek yeni bir Activity oluşturabilirsiniz.
 
-[Google Maps 7](https://i.ibb.co/qWW0vKq/googlemaps9.png)
+![Google Maps 7](https://i.ibb.co/qWW0vKq/googlemaps9.png)
 
 Yeni Activity oluştuktan sonra **res -> values -> google_maps_api.xml** klasörünün içerisinde <code>YOUR_KEY_HERE</code> yazan
 yere API Anahtarını yapıştırabilirsiniz.
 
 
-[Google Maps 8](https://i.ibb.co/txjRkYv/googlemaps10.png)
+![Google Maps 8](https://i.ibb.co/txjRkYv/googlemaps10.png)
 
 Daha sonra API anahtarını Manifest dosyasının içerisine de yapıştıralım.
 
@@ -109,4 +109,4 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 }
 ```
 
-[Google Maps 9](https://i.ibb.co/nfZHgbk/googlemaps11.png)
+![Google Maps 9](https://i.ibb.co/nfZHgbk/googlemaps11.png)

@@ -10,7 +10,7 @@ tags: android butterknife
 Proje büyüdükçe kod karmaşıklığı da artar ve kodun okunabilirliği azalır. Daha az satır ve okunabilir bir kod yazmak için ButterKnife kütüphanesini kullanabilirsiniz.
 Butter Knife bir View Injector kütüphanesidir. Uygulamamızda bulunan bileşenlere annotationlar kullanarak direkt olarak erişebilmeyi sağlar. 
 
-[Butter Knife](https://i.ibb.co/qBD8jMr/butterknife.png)
+![Butter Knife](https://i.ibb.co/qBD8jMr/butterknife.png)
 
 Öncelikle Butter Knife kütüphanesini projemizde kullanabilmemiz için <code>build.gradle</code> dosyası içerisine kütüphaneyi dahil etmek gerekmektedir. Örnek olarak boş bir proje oluşturalım.
 

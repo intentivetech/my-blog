@@ -12,7 +12,7 @@ tags: android servis
 Kullanıcıdan bağımsız olarak arka planda çalışan ve arayüzü olmayan bileşenlere Service(Servis) denir.
 Servisler, genel olarak uzun süren işlemlerin arka planda yapılmasını sağlamak için geliştirilen bir bileşendir. Örneğin müzik çalar uygulamasında dinlediğimiz müziklerin arka planda da çalmaya devam etmesini sağlar. Yani müzik uygulaması Servis kullanılmasaydı müzik uygulamasını kapattığımız gibi müzik de kesilirdi.
 
-[Servis1](https://i.ibb.co/LgnSjTT/servis1.png)
+![Servis1](https://i.ibb.co/LgnSjTT/servis1.png)
 
 ## Servis Oluşturma
 
@@ -242,5 +242,5 @@ Servis oluşturulduğunda **onCreate()** çalışır. Foreground Servisini başl
 
 Oluşturduğumuz Servis Sınıfını Manifest dosyasında belirtmemiz gerekir.
 
-[Servis2](https://i.ibb.co/ygN21JH/servis2.gif)
+![Servis2](https://i.ibb.co/ygN21JH/servis2.gif)
 
