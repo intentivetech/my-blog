@@ -32,18 +32,18 @@ Bir REST sisteminde istekte bulunurken kullandığımız 4 temel HTTP Methodu bu
  
 Visual Studioda yeni bir Python projesi oluşturalım. **File -> New -> Project -> Python -> Web -> Blank Flask Web Project** adımlarını takip ederek projemizi oluşturabiliriz.
 
-[Python1](https://i.ibb.co/MPnrZsM/python1.png)
+![Python1](https://i.ibb.co/MPnrZsM/python1.png)
 
 Projeyi oluşturduktan sonra karşımıza aşağıdaki pencere çıkacaktır.
 
-[Python2](https://i.ibb.co/s5vvc68/python2.png)
+![Python2](https://i.ibb.co/s5vvc68/python2.png)
 
 İşaretli olan seçeneğe tıklayarak, programa gerekli paketleri kendimiz yükleyeceğimizi belirtiyoruz.
 Daha sonra projemize Virtualenv ekleyelim. **Solution Explorer -> Python Environments** seçeneğine sağ tıklayarak **Add Virtual Environment**’e tıklayınız.
 
 *Virtualenv, bilgisayarınızdan bağımsız bir geliştirme ortamı sunar, siz istediğiniz modülleri bu geliştirme ortamında kurarsınız, yüklenen modüller sadece o proje için geçerli olup bilgisayarınıza yüklenmez.*
 
-[Python3](https://i.ibb.co/WVkVptv/python3.png)
+![Python3](https://i.ibb.co/WVkVptv/python3.png)
 
 Açılan pencerede Download and Install Packages seçeneğini işaretleyerek oluştur butonuna tıklayınız.
 
