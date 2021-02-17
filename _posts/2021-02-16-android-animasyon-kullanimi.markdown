@@ -7,7 +7,7 @@ sidebar: []
 tags: android animation
 ---
 
-Uygulama içerisinde daha modern bir görünüm için animasyon kullanılabilmektedir. İçerisinde hazır animasyonlar bulunan ve bunların Android içerisinde kullanılabilmesini sağlayan Lottie'den bahsedeceğim. İçerisinde bulunan ücretsiz animasyonları [buradan](https://lottiefiles.com/featured) inceleyebilirsiniz. 
+Uygulama içerisinde daha modern bir görünüm için animasyon kullanılabilmektedir. İçerisinde hazır animasyonlar bulunan ve bunların Android içerisinde kullanılabilmesini sağlayan Lottie'den bahsedeceğim. Lottiede yer alan ücretsiz animasyonları [buradan](https://lottiefiles.com/featured) inceleyebilirsiniz. 
 
 ## Proje İçerisinde Kullanımı
 
@@ -33,7 +33,7 @@ Animasyonu kullanacağınız layout sayfası içerisine LottieAnimationView ekle
 
 Android içerisinde animasyon görüntülemek için, görüntülemek istediğiniz animasyonun proje içerisinde yer alması gerekmektedir. Animasyon dosyalarının barındırılacağı raw klasörünü oluşturmak için **Res -> New -> Android Resource Directory** seçeneklerine tıklayarak Resource Type kısmını raw olarak değiştirmek gerekmektedir. LottieFiles web sitesinden beğendiğiniz animasyonu JSON olarak indirin ve dosya adını istediğiniz şekilde değiştirin. 
 
-[Lottie JSON](https://i.ibb.co/VQ1htCS/santa.png)
+![Lottie JSON](https://i.ibb.co/VQ1htCS/santa.png)
 
 İndirdiğiniz dosyayı Android Studio içerisinde oluşturduğunuz raw klasörüne taşıyın. 
 
@@ -48,7 +48,7 @@ Animasyonu kullanmak için kodu düzenleyelim:
     app:lottie_loop="true"/>
 ```
 
-[Animation](https://i.ibb.co/1G8h7wR/ezgif-com-gif-maker-3.gif)
+![Animation](https://i.ibb.co/1G8h7wR/ezgif-com-gif-maker-3.gif)
 
 
 Lottie animasyonlarına sahip ilk Android projeniz kullanıma hazır. İyi çalışmalar 🙌
