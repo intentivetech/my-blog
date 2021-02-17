@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Android Animasyonlu Splash Screen"
+title:  "Android Uygulama İçerisinde Animasyon Kullanımı"
 date:   2021-02-16 16:45:22 +0300
 categories: android 
 sidebar: []
-tags: android splash animation
+tags: android animation
 ---
 
 Uygulama içerisinde daha modern bir görünüm için animasyon kullanılabilmektedir. İçerisinde hazır animasyonlar bulunan ve bunların Android içerisinde kullanılabilmesini sağlayan Lottie'den bahsedeceğim. İçerisinde bulunan ücretsiz animasyonları [buradan](https://lottiefiles.com/featured) inceleyebilirsiniz. 
