@@ -47,9 +47,7 @@ Animasyonu kullanmak için kodu düzenleyelim:
     app:lottie_autoPlay="true"
     app:lottie_loop="true"/>
 ```
-
-![Animation](https://i.ibb.co/1G8h7wR/ezgif-com-gif-maker-3.gif)
-
+<img src="https://i.ibb.co/1G8h7wR/ezgif-com-gif-maker-3.gif" width="80" height="120" />
 
 Lottie animasyonlarına sahip ilk Android projeniz kullanıma hazır. İyi çalışmalar 🙌
 
