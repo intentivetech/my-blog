@@ -10,7 +10,7 @@ tags: linux temelkomutlar
 
 
 
-# Linux Nedir? 
+## Linux Nedir? 
 
 ![Linux](https://i.ibb.co/zrm5BGg/linux.png)
 
@@ -20,20 +20,20 @@ Windows, iOS ve Mac OS gibi Linux bir işletim sistemidir. Basitçe söylemek ge
 
 [Sanal Makineye Linux İşletim Sistemi nasıl kurulur?](http://yapbenzet.kocaeli.edu.tr/virtualbox-ubuntukurulumu/) [Windowsun yanına Centos Kurulumu](https://tr.compozi.com/how-install-centos-7-alongside-windows-10-dual-boot)
 
-# Terminal Nedir?
+## Terminal Nedir?
 
 Terminal, bir kullanıcının komutlar yazarak bilgisayarla iletişime geçtiği ortamdır. Dağıtımlara göre bazı komutlar farklılık gösterebilir. Bazı görevleri bir Terminal kullanarak tamamlamak, grafik uygulamalar ve menülerden çok daha hızlı olabilir. 
 
 ## Temel Linux Komutları
 
-### $ pwd komutu
+# $ pwd komutu
 
 ```bat
 pwd
 ```
 Terminali ilk açtığınızda, kullanıcınızın ana dizinindesinizdir (home). Hangi dizinde olduğunuzu öğrenmek için *pwd* komutunu kullanabilirsiniz. Bize root dizininden başlayan yolu verir. Root dizini linux dosya sisteminin temelidir. Dosya sisteminden ilerleyen yazılarımda bahsedeceğim. Ana dizin "/home/username" şeklindedir.  
 
-### $ ls komutu
+# $ ls komutu
 
 Linuxta bulunan en önemli komutlardan birisi de *ls* komutudur. *ls* komutu bulunduğumuz dizin içerisindeki dosya ve klasörleri listeler.
 
