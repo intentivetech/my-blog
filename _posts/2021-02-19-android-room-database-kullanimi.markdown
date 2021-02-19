@@ -4,7 +4,7 @@ title:  "Android Room Database Kullanımı"
 date:   2021-02-19 10:17:22 +0300
 categories: android 
 sidebar: []
-tags: android database room
+tags: android database room kotlin
 ---
 
 Room bir ORM (Object Relational Mapping) kütüphanesidir. ORM, kod blokları ile veritabanı arasında oluşan bir köprüdür. Room, veritabanında oluşturulan alanları Java nesnelerine dönüştürmeyi sağlar. En yaygın kullanım durumu, ilgili verileri ön belleğe almaktadır. Böylece, cihaz ağa erişemediğinde kullanıcı çevrimdışıyken içeriğe erişebilir. 
@@ -13,7 +13,7 @@ Room kütüphanesi, SQLite veritabanı üzerinde bir soyutlama katmanı sağlar.
 
 Room kullanmanın avantajları: 
 
-- Her @Query ve @Entity derleme zamanında kontrol edilir, bu da uygulamanızı çalışma zamanında çökme sorunlarından korur ve yalnızca sözdizimini değil, aynı zamanda eksik tabloları da kontrol eder.
+- Her **@Query** ve **@Entity** derleme zamanında kontrol edilir, bu da uygulamanızı çalışma zamanında çökme sorunlarından korur ve yalnızca sözdizimini değil, aynı zamanda eksik tabloları da kontrol eder.
 - Tekrarlayan ve hataya açık standart kod yazmayı en aza indirir
 - Diğer mimari bileşenlerle kolayca entegre edilir (LiveData, ViewModel vb.)
 
@@ -31,7 +31,7 @@ Veritabanı içindeki bir tabloyu temsil eder. Room, <code>@Entity</code> anotas
 
 **Entity Anotasyonları**
 
-Varlıklarımızı modellemeye başlamadan önce, bazı yararlı anotasyonları ve özniteliklerini bilmemiz gerekir.
+Entityleri modellemeye başlamadan önce, bazı yararlı anotasyonları ve özniteliklerini bilmemiz gerekir.
 
 **@Entity** — Bu anotasyona sahip her model sınıfının DB'de bir mapping tablosu olacaktır.
 
@@ -68,7 +68,7 @@ Database sınıfı, uygulamanıza bu veritabanıyla ilişkili DAO örneklerini s
 
 # 1. Adım: Gradle Bağımlılıklarının Ekleyin
 
-Kotlin kullananlar plugins içerisine kotlin kapt eklemelidir.
+Öncelikle <code>build.gradle</code> dosyasında bulunan plugins bloklarının içerisine kotlin kapt eklemelidir.
 
 ```
 plugins {
@@ -76,7 +76,7 @@ plugins {
 }
 ```
 
-Projenize Room kütüphanesini eklemek için, <code>build.gradle</code> dosyasını açın ve aşağıdaki satırları ekleyin:
+Projenize Room kütüphanesini eklemek için dependencies blokları arasına aşağıdaki satırları ekleyin:
 
 ```
 def roomVersion = '2.2.6'
@@ -94,7 +94,7 @@ Room, <code>@Entity</code> anotasyonu bulunan her sınıf için bir tablo oluşt
 
 ![Word Table](https://i.ibb.co/0BqhCYV/word-table.png)
 
-Room, Entity aracılığı ile tablolar oluşturmaya olanak sağlar. Word adında yeni bir data sınıfı oluşturun. 
+Word adında yeni bir data sınıfı oluşturun. 
 
 Word Sınıfı:
 
