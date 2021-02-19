@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linux’a Giriş — 7 — Dosya İçinde Arama"
+title:  "Linux’a Giriş — 7 — Grep Komutu"
 date:   2021-02-03 15:13:22 +0300
 categories: linux 
 sidebar: []

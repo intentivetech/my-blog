@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linux’a Giriş — 6 — Dosya Arama"
+title:  "Linux’a Giriş — 6 — Find Komutu"
 date:   2021-02-03 10:13:22 +0300
 categories: linux 
 sidebar: []
