@@ -218,7 +218,7 @@ class MainActivity : AppCompatActivity() {
         wordRoomDatabase.wordDao().insert(word)
     }
 
-    private suspend fun listData()
+    private fun listData()
     {
         val list = wordRoomDatabase.wordDao().getAlphabetizedWords()
         Log.d("list", list.toString())
