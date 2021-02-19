@@ -78,7 +78,7 @@ plugins {
 
 Projenize Room kütüphanesini eklemek için dependencies blokları arasına aşağıdaki satırları ekleyin:
 
-```
+```kotlin
 def roomVersion = '2.2.6'
 implementation "androidx.room:room-runtime:$roomVersion"
 kapt "androidx.room:room-compiler:$roomVersion"
@@ -98,7 +98,7 @@ Word adında yeni bir data sınıfı oluşturun.
 
 Word Sınıfı:
 
-```
+```kotlin
 @Entity(tableName = "word_table")
 data class Word(
     @PrimaryKey
@@ -133,7 +133,7 @@ Aşağıdaki sorguları sağlayan DAO oluşturalım:
 1. WordDao adında yeni bir kotlin sınıfı oluşturun.
 2. Aşağıdaki kodu DAO sınıfının içerisine ekleyin.
 
-```
+```kotlin
 @Dao
 interface WordDao {
 
@@ -160,7 +160,7 @@ DAO sınıfını inceleyelim:
 
 Yeni bir veritabanı oluşturmak için öncelikle <code>RoomDatabase</code> sınıfını extend eden bir abstract sınıf oluşturulması gerekir. <code>WordRoomDatabase</code> adında bir kotlin sınıfı oluşturun ve aşağıdaki satırları ekleyin:
 
-```
+```kotlin
 @Database(entities = [Word::class], version = 1, exportSchema = false)
 public abstract class WordRoomDatabase : RoomDatabase() {
 
@@ -197,7 +197,7 @@ Kodu inceleyelim:
 
 Verileri yönetmek için öncelikle veritabanının bir nesnesini oluşturmanız gerekir. Daha sonra veri ekleme, silme gibi işlemleri gerçekleştirebilirsiniz. 
 
-```
+```kotlin
 class MainActivity : AppCompatActivity() {
 
     private lateinit var wordRoomDatabase : WordRoomDatabase
