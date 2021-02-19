@@ -14,7 +14,7 @@ Merhabalar, bu yazımda sizlere toolbar oluşturmayı ve oluşturduğumuz toolba
 Öncelikle toolbarı ekleyeceğimiz activityi oluşturalım.
 
 **ToolbarActivity.java**
-```
+```java
 public class ToolbarActivity extends AppCompatActivity {
 
     @Override
@@ -28,7 +28,7 @@ public class ToolbarActivity extends AppCompatActivity {
 Toolbarı kullanmak için varsayılan olarak gelen action barı devre dışı bırakmamız gerekiyor. Bunun için manifest dosyası içerisinde **android:theme="@style/AppTheme.NoActionBar"** satırını ekleyelim.
 
 **AndroidManifest.xml**
-```
+```xml
 <activity android:name=".ToolbarActivity"
     android:theme="@style/AppTheme.NoActionBar">
     <intent-filter>
@@ -41,7 +41,7 @@ Toolbarı kullanmak için varsayılan olarak gelen action barı devre dışı b�
 NoActionBar temasını kullanabilmek için styles dosyası içerisinde tanımlamamız gerekmektedir.
 
 **styles.xml**
-```
+```xml
 <resources>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -60,7 +60,7 @@ Bu işlemleri gerçekleştirdikten sonra toolbarımızı oluşturabiliriz.
 
 **toolbar.xml**
 
-```
+```xml
 <com.google.android.material.appbar.AppBarLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -83,7 +83,7 @@ Bu işlemleri gerçekleştirdikten sonra toolbarımızı oluşturabiliriz.
 Buradaki bileşenlerin değerini kendi istediğiniz şekilde değiştirebilirsiniz. Oluşturduğumuz toolbarı activity_toolbar.xml dosyası içerisine include edelim.
 
 **activity_toolbar.xml**
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -99,7 +99,7 @@ Buradaki bileşenlerin değerini kendi istediğiniz şekilde değiştirebilirsin
 Bu adımları gerçekleştirdikten sonra activity sınıfımız içerisinde action barın yerine oluşturduğumuz toolbarın kullanılacağını belirtmemiz gerekmektedir.
 
 **ToolbarActivity.java**
-```
+```java
 public class ToolbarActivity extends AppCompatActivity {
 
     @Override
@@ -120,7 +120,7 @@ Basit bir toolbar oluşturduk. Fakat henüz istediğimiz görüntüyü elde edem
 Oluşturduğumuz toolbar içerisine menü ekleyelim. Menü eklemek için: **res -> Android resource file -> Resource type : Menu** seçeneğini seçerek dosyamıza bir isim verelim. Oluşturduğumuz dosya içerisine menü elemanlarını ekleyelim.
 
 **toolbar_menu.xml**
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -148,7 +148,7 @@ Oluşturduğumuz toolbar içerisine menü ekleyelim. Menü eklemek için: **res 
 
 Oluşturduğumuz menüyü toolbar içerisine eklememiz için onCreateOptionsMenu() methodunu activity içerisine ekleyelim.
 
-```
+```java
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {
     getMenuInflater().inflate(R.menu.toolbar_menu, menu);
@@ -158,7 +158,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
 
 Daha sonra hangi elemana tıklandığının kontrolünü yapabilmek için onOptionsItemSelected() methodunu ekleyelim.
 
-```
+```java
 @Override
 public boolean onOptionsItemSelected(MenuItem item) {
     int id = item.getItemId();
@@ -176,7 +176,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
 
 **ToolbarActivity** dosyamızın son hali aşağıdaki gibi olacaktır.
 
-```
+```java
 public class ToolbarActivity extends AppCompatActivity {
 
     @Override

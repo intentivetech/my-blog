@@ -12,7 +12,7 @@ Kullanıcıların bir Linux makinesiyle ilk uğraşırken karşılaştıkları b
 
 Genel kullanımı aşağıdaki gibidir: 
 
-```
+```bat
 find [yol] [aranacak-dosya-yada-dizin] [yapılacak-eylem]
 ```
 
@@ -24,19 +24,19 @@ find [yol] [aranacak-dosya-yada-dizin] [yapılacak-eylem]
 
 # Ada veya Uzantıya Göre Dosyaları Arama
 
-```
+```bat
 find -name deneme
 ```
 
 Bir dosyayı ada göre bulmak için *-name* kullanılır.
 
-```
+```bat
 find -name 'deneme*'
 ```
 
 Adı deneme ile başlayan dosyaları bulur.
 
-```
+```bat
 find -name '*deneme*'
 ```
 
@@ -44,7 +44,7 @@ Adında deneme kelimesi geçen dosyaları bulur.
 
 ![Linux](https://i.ibb.co/J7wyLnm/finddeneme.png)
 
-```
+```bat
 find -iname deneme
 ```
 
@@ -62,31 +62,31 @@ find -iname deneme
 - **c:** karakter cihazlar
 - **b:** blok cihazlar
 
-```
+```bat
 find / -type f -name '*.conf'
 ```
 
 .conf uzantısı ile biten tüm dosyaları bu şekilde bulabilirsiniz.
 
-```
+```bat
 find /etc -type f -name 'a*'
 ```
 
 etc dizininde türü dosya olan ve a ile başlayan dosyaları görüntüler.
 
-```
+```bat
 find /etc -type d -iname '*a'
 ```
 
 etc dizininde türü dizin olan ve a ile biten dosyaları görüntüler.
 
-```
+```bat
 find /etc -type f -iname '*.conf' | xargs tar -czf conf.tar.gz
 ```
 
 etc dizinindeki .conf uzantılı dosyaları hem arşivler hemde sıkıştırır.
 
-```
+```bat
 find /etc -type f -iname '*.conf' >> /tmp/conf
 ```
 
@@ -101,25 +101,25 @@ Belirli bir boyuta eşit veya daha büyük, belirli bir aralıkta veya boş olan
 - **m:** megabyte
 - **g:** gigabyte
 
-```
+```bat
 find / -size 30M
 ```
 
 Boyutu 30M olan tüm dosyaları bulur.
 
-```
+```bat
 find -size +1M
 ```
 
 Boyutu 1MB'den büyük tüm dosyaları bulur.
 
-```
+```bat
 find . -type f -size -10M
 ```
 
 Geçerli dizinde boyutu 10M'dan az olan dosyaları bulur.
 
-```
+```bat
 find / -size +100M -size -200M
 ```
 
@@ -127,13 +127,13 @@ Boyutu 100M ve 200M arasındaki dosyaları bulur.
 
 # Boş Dosyaları Arama
 
-```
+```bat
 find ./ -type f -size 0
 ```
 
 yada 
 
-```
+```bat
 find -empty
 ```
 
@@ -143,19 +143,19 @@ Boş dosyaları bulur.
 
 Genel kullanımı: 
 
-```
+```bat
 find -perm mod
 ```
 
 - **mod:** Sayısal gösterim yada sembolik karakter gösterimleri kullanılmaktadır. (644, 655, 700, 777, u=x, a=r+x gibi.)
 
-```
+```bat
 find -perm 777
 ```
 
 Tüm kullanıcıların tam yetki ile işlem yapabileceği dosyaları listeler.
 
-```
+```bat
 find -perm -766
 ```
 

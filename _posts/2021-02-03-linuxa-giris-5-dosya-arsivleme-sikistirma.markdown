@@ -23,31 +23,31 @@ tar komutu birden çok dosyayı tek bir dosyada birleştirmek veya depolamak iç
 - **t** - Arşivin içerisindeki dosyaları listeler
 
 
-```
+```bat
 tar -cf arsiv.tar dosya1.txt dosya2.txt
 ```
 
 *-c* (create) parametresi yeni bir arşiv oluşturmaya yarar. *-f* parametresi ile arşiv içerisine eklenecek dosyalar belirtilir. Benzer şekilde bir dizinden arşiv oluşturalım.
 
-```
+```bat
 tar -cf arsiv.tar dizin/
 ```
 
 Arşivi mevcut dizinde çıkartmak için aşağıdaki komutu yazmanız yeterlidir:
 
-```
+```bat
 tar -xf arsiv.tar
 ```
 
 Arşivi farklı bir dizine çıkarmak için *-C* parametresi kullanılmaktadır.
 
-```
+```bat
 tar -xf arsiv.tar -C Downloads/
 ```
 
 *-C* parametresi kullanılarak dosyalar belirtilen dizine (örnekte Downloads dizini) çıkarılır.
 
-```
+```bat
 tar -cvf arsiv.tar test1.txt test2.txt
 ```
 
@@ -55,13 +55,13 @@ tar -cvf arsiv.tar test1.txt test2.txt
 
 ![Linux](https://i.ibb.co/5jzkPdn/tarvparametre.png)
 
-```
+```bat
 tar -tf arsiv.tar
 ```
 
 *-t* parametresi arşivden çıkarmadan dosyanın içerisinde bulunan dosyaları gösterir.
 
-```
+```bat
 tar -rf arsiv.tar test3.txt
 ```
 
@@ -73,19 +73,19 @@ Varsayılan olarak *tar* komutu .tar uzantılı arşiv dosyası oluşturur. Ayr�
 
 Öncelikle **gzip** arşivi oluşturalım: 
 
-```
+```bat
 tar -czf arsiv.tar.gz dizin/
 ```
 
 yada
 
-```
+```bat
 tar -czf arsiv.tgz dizin/
 ```
 
 *gzip* sıkıştırma yöntemini kullanmak için *-z* parametresi kullanılmaktadır.
 
-```
+```bat
 tar -xzvf arsiv.tar.gz
 ```
 
@@ -93,19 +93,19 @@ Ziplenmiş ve arşivlenmiş dosyayı çıkarmak için *-x* *-z* parametreleri ku
 
 **bzip** arşivi oluşturalım:
 
-```
+```bat
 tar -cjf arsiv.tar.bz2 dizin/
 ```
 
 yada
 
-```
+```bat
 tar -cjf arsiv.tbz dizin/
 ```
 
 *bzip* sıkıştırma yöntemini kullanmak için *-j* parametresi kullanılmaktadır.
 
-```
+```bat
 tar -xjvf arsiv.tbz
 ```
 

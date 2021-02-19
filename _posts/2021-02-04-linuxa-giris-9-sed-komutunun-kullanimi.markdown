@@ -13,7 +13,7 @@ tags: linux sed
 
 Bir dosya oluşturalım.
 
-```
+```bat
 nano ornek.txt
 ```
 
@@ -35,49 +35,49 @@ Osman karpuzsuyu
 Betül narsuyu
 ```
 
-```
+```bat
 sed 's/u/Z/' ornek.txt
 ```
 
 Metinde bulunan ‘u’ harflerini ‘Z’ harfi yapar yalnız aynı satırda birden fazla ‘u’ varsa sadece ilk bulduğunu değiştirir.
 
-```
+```bat
 sed 's/portakalsuyu/limonata/g' ornek.txt
 ```
 
 Metinleri değiştirme ‘s’ işleci ile gerçekleşir. Yukarıdaki örnekte portakalsuyu yerine limonata yazar. ‘g’ ise tüm satırda aynı işlemi uygulamaya yarar.
 
-```
+```bat
 sed 's/u/Z/g' ornek.txt
 ```
 
 'g' işleci kullanılarak aynı işlemin tüm satırda uygulanması sağlanabilir.
 
-```
+```bat
 sed 's/^F/f/' ornek.txt
 ```
 
 <code>^</code> karakteri satır başını ifade eder. F harfi ile başlayan kelimeleri f ile değiştir.
 
-```
+```bat
 sed 's/$/SATIRSONU/' ornek.txt
 ```
 
 <code>$</code> karakteri satır sonu anlamına gelir ve bu komut satır sonlarına SATIRSONU yazar.
 
-```
+```bat
 sed 's/^$/BOSSATIR/' ornek.txt
 ```
 
 <code>^$</code> boş satırları ifade eder. Yukarıdaki örnek boş satırlara BOSSATIR kelimesini yazar.
 
-```
+```bat
 sed '/^$/d' ornek.txt
 ```
 
 *d* işleci ile silme işlemleri gerçekleştirilir. Yukarıdaki örnek komut boş satırları silmeyi sağlar.
 
-```
+```bat
 sed -e 's/Z/u/g' -e 's/e/B/g' ornek.txt
 ```
 
@@ -87,7 +87,7 @@ sed -e 's/Z/u/g' -e 's/e/B/g' ornek.txt
 
 Basitleştirilmiş bir programlama dili olarak görülebilir. Bir dosya içerisinde istediğimiz sütunlara kolayca ulaşabiliriz.Veya sütunlar arası matematiksel işlemleri kolayca yapabiliriz.
 
-```
+```bat
 awk '{print $1}' ornek.txt
 ```
 
@@ -110,7 +110,7 @@ Betül narsuyu 5 1
 olarak değiştirelim.
 ```
 
-```
+```bat
 awk '{sonuc=$3*$4; print $0 ,sonuc}' ornek.txt
 ```
 

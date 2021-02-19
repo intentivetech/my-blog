@@ -25,7 +25,7 @@ Projemize fragments adında paket ekleyelim. Paket eklemek için **New -> Packag
 
 Her fragment aşağıdaki kodu içerecektir.
 
-```
+```java
 public class HomeFragment extends Fragment{
 
     @Override
@@ -38,7 +38,7 @@ public class HomeFragment extends Fragment{
 Şimdi menüye tıklayınca fragmentleri değiştireceğiz. Ayrıca uygulama başlatıldığında default olarak HomeFragment’in yüklenmesini sağlayacağız.
 Default fragmenti çalıştırmak için **loadFragment()** fonksiyonu oluşturalım. Fonksiyon parametre olarak bir fragment nesnesi alır.
 
-```
+```java
 private boolean loadFragment(Fragment fragment) {
     if (fragment != null) {
         getSupportFragmentManager()
@@ -53,7 +53,7 @@ private boolean loadFragment(Fragment fragment) {
 
 Default fragmenti başlatmak için activitynin **onCreate()** methodu içerisinde **loadFragment()** fonksiyonunu çağırıp, HomeFragment nesnesini parametre olarak gönderiyoruz.
 
-```
+```java
 private boolean loadFragment(Fragment fragment) {
         if (fragment != null) {
             getSupportFragmentManager()
@@ -68,7 +68,7 @@ private boolean loadFragment(Fragment fragment) {
 
 BottomNavigationView bileşenini tanımlayarak tıklama olayını tespit etmek **OnNavigationItemSelectedListener** interface’ini kullanıyoruz. **setItemIconTintList(null)** iconun orjinal rengini kullanmamızı sağlar.
 
-```
+```java
 @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,7 +82,7 @@ BottomNavigationView bileşenini tanımlayarak tıklama olayını tespit etmek *
 
 **onNavigationItemSelected()** methodu menüye tıklandığında çalışacaktır ve tıklanan butona göre fragmentler çağrılacaktır.
 
-```
+```java
 private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -106,7 +106,7 @@ private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemS
 ```
 
 Yukarıdaki kod bloklarının tamamını içeren **MainActivity.java**
-```
+```java
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
 
 **strings.xml** dosyası içerisinde aşağıdaki dizeleri tanımlayalım.
 
-```
+```xml
 <resources>
     <string name="app_name">Bottom Navigation Example</string>
     <string name="title_home">Anasayfa</string>
@@ -170,7 +170,7 @@ Res klasörünün altında bir menu klasörü oluşturmalı ve içerisine bottom
 
 **bottom_nav_menu.xml**
 
-```
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <menu xmlns:android="http://schemas.android.com/apk/res/android">
         <item
@@ -192,7 +192,7 @@ Drawable klasörünün içerisinde home_selector, notification_selector, account
 
 **home_selector.xml**
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/home_outline" android:state_checked="false"/>
@@ -204,7 +204,7 @@ Drawable klasörünün içerisinde home_selector, notification_selector, account
 
 activity_main.xml dosyasının içerisini aşağıdaki şekilde değiştirelim ve menüyü dahil edelim. (app:menu=”@menu/bottom_nav_menu”)
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"

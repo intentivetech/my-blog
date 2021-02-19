@@ -50,7 +50,7 @@ Bir dosya veya dizinin izin ayarlarını değiştirmek için **chmod** komutu ku
 
 Basit kullanımı bu şekildedir: 
 
-```
+```bat
 chmod izin dosyaadı
 ```
 
@@ -66,7 +66,7 @@ Sembolik karakterleri kullanarak izin ayarlarını belirtmek için, kullanıcı 
 
 Dosyaya herkes için okuma, yazma, çalıştırma yetkisi vermek için:
 
-```
+```bat
 chmod u=rwx,g=rwx,o=rwx dosyaadı
 ```
 
@@ -76,7 +76,7 @@ chmod u=rwx,g=rwx,o=rwx dosyaadı
 - Kullanıcı grupları için okuma izni
 - Diğer kullanıcılar için okuma izni
 
-```
+```bat
 chmod u=rw,g=r,o=r test.txt
 ```
 
@@ -102,7 +102,7 @@ Her kategori (kullanıcı, grup, sahip) için izin tanımlamanız gerektiğinden
 
 Aynı izin ayarları, aşağıdaki komutla sayısal gösterim yöntemi kullanılarak tanımlanabilir:
 
-```
+```bat
 chmod 644 test.txt
 ```
 
@@ -116,13 +116,13 @@ Dosya izinlerini değiştirmenin yanı sıra, kullanıcı dosya sahipliğini vey
 
 *chown*, change owner kelimelerinin kısaltılmasıdır ve dosya sahibini değiştirmek için kullanılır. Kullanımı aşağıdaki gibidir: 
 
-```
+```bat
 chown kullanıcı dosyaadı
 ```
 
 Örneğin test.txt dosyasının sahibini *firstuser* kullanıcı olarak atayalım.
 
-```
+```bat
 sudo chown firstuser test.txt
 ```
 
@@ -130,13 +130,13 @@ sudo chown firstuser test.txt
 
 *chgrp* change group kelimelerinin kısaltılmasıdır ve grup sahipliğini değiştirmek için kullanılır. Kullanımı aşağıdaki gibidir: 
 
-```
+```bat
 chgrp grupadı dosyaadı
 ```
 
 Örneğin test.txt dosyasının grup sahipliğini *firstgroup* grubu olarak atayalım.
 
-```
+```bat
 sudo chgrp firstgroup test.txt
 ```
 

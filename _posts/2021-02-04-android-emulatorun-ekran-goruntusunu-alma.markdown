@@ -13,20 +13,20 @@ Terminalde adb komutu kullanmamız için öncelikle Path içerisine platform-too
 
 Ekran resmi almak için **adb shell screencap** komutunu kullanıyoruz.
 
-```
+```bat
 adb shell screencap /sdcard/screen.png
 ```
 
 Oluşturduğumuz dosyaları Android Studio içerisinde bulunan Device Explorer panelinden sdcard klasörünün altında görebilirsiniz.
 Aldığımız ekran görüntüsünü bilgisayarımıza indirmek için **adb pull** komutunu kullanıyoruz. Aramaya dosyanın adını yazarak hangi klasörde olduğunu bulabilirsiniz.
 
-```
+```bat
 adb pull /sdcard/screen.png
 ```
 
 Ekranı kaydetmek için **adb shell screenrecord** komutunu kullanıyoruz.
 
-```
+```bat
 adb shell screenrecord /sdcard/foo.mp4
 ```
 
@@ -34,7 +34,7 @@ MP4 uzantılı dosyayı GIF’e çevirmek için **FFmpeg** aracını kullanacağ
 
 ffmpeg -i komutunu kullanarak önce input dosyamızı daha sonra output dosyamızı ve formatını belirtiyoruz.
 
-```
+```bat
 ffmpeg -i foo.mp4 foo.gif
 ```
 

@@ -61,7 +61,7 @@ MapsActivity’i otomatik olarak oluşturulduğunda içerisinde bazı hazır kod
 Projemizde haritaları kullanmanın en kolay yolu **SupportMapFragment** kullanmaktır. Bunun için **activity_maps.xml** dosyamızın içerisine bir fragment bileşeni eklememiz gerekiyor.
 
 **activity_maps.xml**
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <fragment xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
@@ -77,7 +77,7 @@ Projemizde haritaları kullanmanın en kolay yolu **SupportMapFragment** kullanm
 Daha sonra bu enlem ve boylam üzerine Marker eklemek için **addMarker()** methodu kullanılır.
 
 **MapsActivity.java**
-```
+```java
 package testapp.sdatam.sdatam;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;

@@ -19,7 +19,7 @@ Butona tıklandıkça TextView’deki değeri arttıran basit bir proje yapacağ
 implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 ```
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -53,7 +53,7 @@ implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 
 UI tarafından ihtiyaç duyulan Observable değişkenler View Model içerisinden sağlanır. Bunun için View Model sınıfımızı oluşturalım.
 
-```
+```kotlin
 package com.hktechnology.examples
 
 import androidx.lifecycle.MutableLiveData
@@ -78,7 +78,7 @@ class MainViewModel : ViewModel() {
 
 Sayı değerini tutmak için integer bir count değişkeni tanımlayalım. Daha sonra integer değeri tutmak için LiveData objesi oluşturalım. Oluşturduğumuz integer değişkeninin değerini arttırmak ve LiveData’nın içeriğini güncellemek için getCount() methodunu oluşturalım. Şimdi MainActivity’e geçebiliriz.
 
-```
+```kotlin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button

@@ -18,13 +18,13 @@ implementation "androidx.security:security-crypto:1.1.0-alpha02"
 
 Verilerinizi şifrelemeye geçmeden önce, bir şifreleme anahtarı oluşturmak gerekir. Bu anahtara Master Key denir ve Android Keystore içerisinde AES şifreleme kullanılarak depolanmaktadır.
 
-```
+```kotlin
 val masterKey = MasterKey.Builder(applicationContext, MasterKey.DEFAULT_MASTER_KEY_ALIAS).setKeyScheme(MasterKey.KeyScheme.AES256_GCM).build()
 ```
 
 Master Key oluşturmak ve kullanabilmek için **AES256_GCM_SPEC** adlı varsayılan bir anahtar oluşturma özelliği verilmiştir.
 
-```
+```kotlin
 val sharedPreferences = EncryptedSharedPreferences.create(applicationContext, PREFS_NAME, masterKey, EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV, EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM)
 ```
 
@@ -34,7 +34,7 @@ EncryptedSharedPreferences örneğini oluşturduktan sonra, verileri saklamak ve
 
 Örnek olarak bir test verisi saklayalım ve veriyi görüntüleyelim.
 
-```
+```kotlin
 sharedPreferences.edit().putString("test","test").apply()
 val data = sharedPreferences.getString("test","")
 Log.d("ShowData", data)
@@ -42,7 +42,7 @@ Log.d("ShowData", data)
 
 Kodun son hali aşağıdaki gibi olacaktır.
 
-```
+```kotlin
 val masterKey = MasterKey.Builder(applicationContext,MasterKey. DEFAULT_MASTER_KEY_ALIAS) 
         .setKeyScheme(MasterKey.KeyScheme.AES256_GCM) 
         .build() 

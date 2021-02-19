@@ -20,7 +20,7 @@ Awk, bir programcının, bir belgenin her satırında aranacak metin kalıpları
 - Giriş alanlarını modelle karşılaştırır
 - Eşleşen hatlarda eylem gerçekleştirir
 
-```
+```bat
 awk '{print $1}' ornek.txt
 ```
 
@@ -42,25 +42,25 @@ Osman karpuzsuyu 3 5
 Betül narsuyu 5 1
 ```
 
-```
+```bat
 awk '/kavunsuyu/ {print}' ornek.txt 
 ```
 
 Yukarıdaki örnekte awk komutu kavunsuyu kelimesi ile eşlesen satırları gösterir.
 
-```
+```bat
 awk '{print $1,$4}' ornek.txt 
 ```
 
 Yukarıdaki örnekte $1 isimleri, $4 ise 4. satırdaki verileri temsil eder.
 
-```
+```bat
 awk '{sonuc=$3*$4; print $0 ,sonuc}' ornek.txt
 ```
 
 Yukarıdaki örnek komut 3. ve 4. satırdaki değerleri çarparak bir sonuc adında bir değişkene atar, ekrana hem tüm dosya içeriğini hemde sonuc değişkeninin değerlerini yazar.
 
-```
+```bat
 awk '{print NR,$0}' ornek.txt 
 ```
 

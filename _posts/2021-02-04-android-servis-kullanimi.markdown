@@ -43,7 +43,7 @@ Bir servis kullanılmadığında ve yok edildiğinde, sistem bu metodu çağır�
 Boş bir activity oluşturalım. İçerisine 2 tane buton ekleyelim. Butonlardan 1. sine tıklandığında servisimizi başlatıp, 2. sine tıklandığında servisimizi durduracağız.
 Butonları içeren activity_main.xml dosyamız aşağıdaki gibidir.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -90,7 +90,7 @@ Butonları içeren activity_main.xml dosyamız aşağıdaki gibidir.
 Bir servis bileşeni **startService()** metodu kullanılarak başlatılır, **stopService()** methodu kullanılarak durdurulur. Bu methodlar parametre olarak intent nesnesi alır.
 
 **MainActivity.java**
-```
+```java
 package com.twinstech.mediumexamples;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -151,7 +151,7 @@ Intent Sınıfı parametre olarak Context ve Sınıf ister. Çalıştırmak iste
 
 **HelloService.java**
 
-```
+```java
 package com.twinstech.mediumexamples;
 
 import android.app.Notification;
@@ -215,7 +215,7 @@ Servis oluşturulduğunda **onCreate()** çalışır. Foreground Servisini başl
 **onStartCommand()** içerisinde arka planda çalıştırmak istediğiniz kodları yazabilirsiniz. Servisin başlatıldığını anlamak için örnek olarak ekranda “Servis başlatıldı” mesajını gösterdim. **onDestroy()** servis durdurulduğunda çalışır, Android 8 için oluşturduğumuz bildirimi burada silmemiz gerekir. Bunun için stopForeground(true) methodu kullanılmaktadır.
 
 **AndroidManifest.xml**
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.twinstech.mediumexamples">

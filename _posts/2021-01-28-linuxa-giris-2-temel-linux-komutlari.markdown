@@ -15,7 +15,7 @@ Temel Linux Komutlarına devam ediyoruz. Önceki yazımı okumadıysanız okuman
 
 Sisteminizdeki bir dosyanın disk kullanımını öğrenmek için *du* komutu kullanılır. 
 
-```
+```bat
 du Documents
 ```
 
@@ -25,7 +25,7 @@ du Documents
 
 *echo* komutu, bazı verileri, genellikle metni bir dosyaya taşımamıza yardımcı olur.
 
-```
+```bat
 echo hello, this is test >> new.txt”
 ```
 
@@ -36,7 +36,7 @@ echo hello, this is test >> new.txt”
 
 Bir dosyanın içeriğini görüntülemek için cat komutunu kullanılır.
 
-```
+```bat
 cat dosyaadı
 ```
 
@@ -46,7 +46,7 @@ cat dosyaadı
 
 *nano* komut satırında yüklü metin düzenleyicidir. Nano, anahtar kelimeleri renkli olarak belirten ve çoğu dili tanıyan iyi bir metin düzenleyicidir.
 
-```
+```bat
 nano new.txt
 ```
 
@@ -56,13 +56,13 @@ nano new.txt
 
 Terminalde yazdığımız komut geçmişini gösterir.
 
-```
+```bat
 history -c
 ```
 
 -c parametresi ile komut geçmişini temizleyebilirsiniz.
 
-```
+```bat
 history > dizin/28.01.2021
 ```
 
@@ -76,7 +76,7 @@ history > dizin/28.01.2021
 
 *head* komutu, kendisine verilen dosyaların ilk bölümünün standart giriş yoluyla çıktısını almak için kullanılmaktadır.
 
-```
+```bat
 head dosyaadı
 ```
 
@@ -84,13 +84,13 @@ head dosyaadı
 
 Komutun çıktasında görüldüğü üzere dosya içerisindeki ilk 10 satırının görüntülenmesini sağlamaktadır. 
 
-```
+```bat
 head -n 5 dosyaadı
 ```
 
 -n parametresiyle görüntülenmek istenen satır sayısında değişiklik yapılabilmektedir. Örneğin 5 yazıldığında ilk 5 satırı listeler.
 
-```
+```bat
 head -n -5 dosyaadı
 ```
 
@@ -100,13 +100,13 @@ Negatif bir sayı girildiğinde ise listemeyi sondan başlayarak gerçekleştiri
 
 *tail* komutu, varsayılan olarak her dosyanın son 10 satırını standart çıktıya yazdırır.
 
-```
+```bat
 tail dosyaadı
 ```
 
 Belirtilen dosya içerisindeki son 10 satırı görüntüler.
 
-```
+```bat
 tail -n 5 dosyaadı
 ```
 
@@ -118,7 +118,7 @@ tail -n 5 dosyaadı
 
 *>* işareti bir dosyanın içerisine yazı yazmamızı sağlar. Sistemde varolan bir dosyayı kullanırsak içeriği silinerek yeni yazdıklarımız kaydolur. Komutu yazdıktan sonra bir alt satırda dosya içerisine yazmak istediklerimizi girebiliriz, CTRL+D ile yazı yazma işlemini bitirebiliriz. cat dosyaadi ile yaptıklarımızı gözden geçirebilirsiniz.
 
-```
+```bat
 cat > dosyaadı
 ```
 
@@ -132,7 +132,7 @@ cat > dosyaadı
 
 Pipe yazdığımız bir komutun çıktısını başka bir komutun girdisi olarak atar.
 
-```
+```bat
 ls | wc
 ```
 

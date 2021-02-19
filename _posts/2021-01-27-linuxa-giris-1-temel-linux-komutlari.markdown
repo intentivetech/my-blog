@@ -28,7 +28,7 @@ Terminal, bir kullanıcının komutlar yazarak bilgisayarla iletişime geçtiği
 
 ### $ pwd komutu
 
-```
+```bat
 pwd
 ```
 Terminali ilk açtığınızda, kullanıcınızın ana dizinindesinizdir (home). Hangi dizinde olduğunuzu öğrenmek için *pwd* komutunu kullanabilirsiniz. Bize root dizininden başlayan yolu verir. Root dizini linux dosya sisteminin temelidir. Dosya sisteminden ilerleyen yazılarımda bahsedeceğim. Ana dizin "/home/username" şeklindedir.  
@@ -39,12 +39,12 @@ Linuxta bulunan en önemli komutlardan birisi de *ls* komutudur. *ls* komutu bul
 
 ![ls komutu](https://i.ibb.co/6BBgS3b/ls.png)
 
-```
+```bat
 ls
 ```
 Basitçe kullanımı bu şekildedir. Ayrıntılı şekilde listeleme işlemini farklı parametreler ile gerçekleştirebiliriz.
 
-```
+```bat
 ls -l
 ```
 
@@ -53,7 +53,7 @@ ls -l
 
 **NOT:** Bir komuttan sonra - ile başlayan bir komut kullanımı parametre olarak adlandırılır. Burada ls komutunun l parametresini gördük.
 
-```
+```bat
 ls -a
 ```
 
@@ -63,7 +63,7 @@ ls -a
 
 Dizinler arası geçiş yapmayı sağlayan komuttur. Örneğin şuanda ana dizinde (home) olduğunuzu varsayalım ve farklı bir dizine gitmek istiyorsunuz. (Dizinleri windowstaki klasörler olarak düşünebilirsiniz)
 
-```
+```bat
 cd dizin_adi
 ```
 
@@ -73,7 +73,7 @@ komutunu kullanarak bulunduğunuz dizinden belirttiğiniz dizine gidebilirsiniz.
 **Örneğin;** bir test dizininizin içerisinde dizin1 ve dizin2 adında iki tane dizininiz olsun. *cd dizin1* komutu ile dizin1 ‘e geçtiğinizde, daha sonra tekrar dizin2'ye geçmek için *cd dizin2* komutunu çalıştırdığınızda hata alacaksınız. Hatanın sebebi dizin2, test dizinin altında bulunurken, dizin1'in içerisindeyken dizin2'ye geçiş yapmanızdır.
 
 
-```
+```bat
 cd ../dizin2
 ```
 
@@ -84,7 +84,7 @@ cd ../dizin2
 
 Touch komutu dosya oluşturmaya yarar. Örnek kullanımı aşağıdaki şekildedir.
 
-```
+```bat
 touch DOSYA_ADI
 ```
 
@@ -93,13 +93,13 @@ Dosya oluşturduktan sonra ls komutu ile bulunduğumuz dizindeki klasörleri lis
 
 **NOT:** Varolan bir dosyayı tekrar touch DOSYA_ADI şeklinde yazarsak dosyanın oluşturulma saatinin değiştiğini görebiliriz. (ls -l ile)
 
-```
+```bat
 touch dosya1 dosya2
 ```
 
 Birden fazla dosya oluşturmak için dosya isimlerini yan yana yazmamız yeterlidir.
 
-```
+```bat
 touch dosyaadi{1..10}
 ```
 Bu yöntemle birden fazla dosyayı kolayca oluşturabiliriz. dosyaadi1 , dosyaadi2 .. dosyaadi10 ‘ a kadar.
@@ -109,13 +109,13 @@ Bu yöntemle birden fazla dosyayı kolayca oluşturabiliriz. dosyaadi1 , dosyaad
 
 mkdir komutu dizin oluşturmak için kullanılır. Dizinlerin dosyalar ile farkı ise dosyalarının .txt, .jpg, .mp3 gibi uzantılarının olmasıdır.
 
-```
+```bat
 mkdir DİZİN_ADI
 ```
 
 mkdir komutunun basitçe kullanımı yukarıdaki gibidir. ls komutunu kullanarak dizinin oluşturulduğunu görebilirsiniz.
 
-```
+```bat
 mkdir DİZİN1 DİZİN2
 ```
 Aynı anda birden fazla dizin oluşturmak için yan yana yazabiliriz. 
@@ -125,30 +125,30 @@ Aynı anda birden fazla dizin oluşturmak için yan yana yazabiliriz.
 
 Dosyaları ve dizinleri silmek için kullanılır.
 
-```
+```bat
 rm dosya_adi
 ```
 
 Sildikten sonra “silindi” şeklinde bir cevap gelmediği için yaptığımız işlemler sonrasında ls komutunu kullanarak kontrol edebilirsiniz.
 
-```
+```bat
 rmdir dizin_adi
 ```
 
 Dizinleri silmek için kullanılır ancak dizinin içerisi doluysa hata verir.
 
-```
+```bat
 rm -r dizin_adi
 ```
 İçerisi dolu olan bir dizini silmek için -r parametresini kullanmak gerekir. 
 
-```
+```bat
 rm -rf
 ```
 
 -f parametresi “silmek istediğinize emin misiniz” gibi soruları önler.
 
-```
+```bat
 rm -rf dosya[12345]
 ```
 Aynı anda isimleri dosya1,dosya2.. şeklinde giden 5 dosyayı bu şekilde tek bir komutla silebilirsiniz.
@@ -157,7 +157,7 @@ Aynı anda isimleri dosya1,dosya2.. şeklinde giden 5 dosyayı bu şekilde tek b
 
 *mv* komutu dosyaları komut satırı üzerinden farklı bir dizine taşımayı sağlamaktadır. Ayrıca dosyaların isimlerini değiştirmek için de kullanabiliriz. 
 
-```
+```bat
 mv dosya1 dosya2yeni
 ```
 Örneğin dosya1 isimli dosyanın adını dosya2yeni ile değiştirmek için *mv varolandosyaadı yenidosyaadı* komutu kullanılmaktadır.
@@ -166,14 +166,14 @@ Home dizininde (~) iki tane dizinimiz olsun (mkdir komutu ile oluşturabilirsini
 
 Bunun için cd dizin1 diyerek dizin1'e geçiş yapmak gerekmektedir. Daha sonra aşağıdaki komutu çalıştırın.
 
-```
+```bat
 mv ./tasinacakdosya ../dizin2
 ```
 Bu komutun anlamı: dizin1'in içerisindeki (. şuan bulunduğum dizin yani dizin1) tasinacakdosya adlı dosyayı al bir üst dizindeki (..)dizin2 isimli dizine taşı.
 
 Aynı işlemler dizin1'e geçmeden de yapılabilir.
 
-```
+```bat
 mv dizin1/tasinacakdosya dizin2
 ```
 Hangisi daha kolayınıza gelirse :)
@@ -183,7 +183,7 @@ Hangisi daha kolayınıza gelirse :)
 
 Dosyaları komut satırı üzerinden kopyalamak için *cp* komutu kullanılmaktadır.
 
-```
+```bat
 cp dosya1 kopya
 ```
 Basitçe kullanımı bu şekildedir. 
@@ -191,7 +191,7 @@ Basitçe kullanımı bu şekildedir.
 
 Farklı bir dizine kopyalama işlemi:
 
-```
+```bat
 cp dosya1 dizin2/kopya
 ```
 Örnek olarak dizin2'nin içerisine kopyaladım, başka bir yere de kopyalayabilirsiniz.
@@ -201,7 +201,7 @@ cp dosya1 dizin2/kopya
 
 Linux’un en önemli komutlarından biri de *man* komutudur.
 
-```
+```bat
 man komut
 ```
 

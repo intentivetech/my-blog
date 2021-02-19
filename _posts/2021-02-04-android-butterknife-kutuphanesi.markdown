@@ -35,7 +35,7 @@ Oluşturulan proje içerisine MainActivity adında bir activity ekleyelim. Layou
 Öncelikle Butter Knife kullanmadan işlemlerimizi nasıl gerçekleştirdiğimize bakalım. Layout içerisindeki bileşenlere Activity üzerinden erişebilmek için findViewById kullanıyoruz. Butona Click Event’ını vermek için ise satır sayımızın ve kod karmaşıklığının arttığını görebilirsiniz.
 
 **MainActivity.java**
-```
+```java
 public class MainActivity extends AppCompatActivity {
     private TextView twTest;
     private Button btnTest;
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 **activity_main.xml**
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -96,7 +96,7 @@ Aynı örneği Activity içerisinde Butter Knife kullanarak yapalım. onCreate i
 Bileşenlerimizi Activity’de tanımlamak için kullandığımız findViewById yerine <code>@BindView</code> annotation’nını kullanıyoruz. Click Eventi için yazdığımız satırlarca kod yerine <code>@OnClick</code> annotation’nını kullanarak kodumuzu daha yalın hale getirmiş oluruz.
 
 **MainActivity.java**
-```
+```java
 public class MainActivity extends AppCompatActivity {
     @BindView(R.id.twTest) TextView twTest;
     @BindView(R.id.btnTest) TextView btnTest;

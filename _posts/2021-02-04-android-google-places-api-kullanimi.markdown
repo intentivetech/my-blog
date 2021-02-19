@@ -26,7 +26,7 @@ Key aldıktan ve Places API’yi etkinleştirdikten sonra values klasörü altı
 
 **google_maps_api.xml**
 
-```
+```xml
 <resources>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">API_KEYINIZI_YAZINIZ</string>
 </resources>
@@ -36,7 +36,7 @@ Manifest dosyası içerisinde bu keyi belirtmemiz gerekiyor.
 
 **AndroidManifest.xml**
 
-```
+```xml
 <meta-data
     android:name="com.google.android.geo.API_KEY"
     android:value="@string/google_maps_key" />
@@ -44,7 +44,7 @@ Manifest dosyası içerisinde bu keyi belirtmemiz gerekiyor.
 
 Bir Activity oluşturalım. Places API’yi başlatmak için aşağıdaki satırları activityimize ekleyelim. Her iki yöntemde de Place API’yi kesinlikle başlatmamız gerekmektedir.
 
-```
+```java
 String apiKey = getString(R.string.google_maps_key);
 if (!Places.isInitialized()) {
     Places.initialize(getApplicationContext(), apiKey);
@@ -57,7 +57,7 @@ PlacesClient placesClient = Places.createClient(this);
 Oluşturduğumuz activitynin layoutuna AutocompleteSupportFragmenti ekleyelim.
 
 **activity_autocomplete_example.xml**
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -79,7 +79,7 @@ Oluşturduğumuz activitynin layoutuna AutocompleteSupportFragmenti ekleyelim.
 
 Oluşturduğumuz AutocompleteSupportFragmentin bir nesnesini oluşturarak bir PlaceSelectionListener ekleyelim. PlaceSelectionListener seçtiğimiz yer ile ilgili bize yanıt döndürür.
 
-```
+```java
 //autocompletefragment nesnesi oluşturur
 AutocompleteSupportFragment autocompleteFragment = (AutocompleteSupportFragment)
         getSupportFragmentManager().findFragmentById(R.id.autocomplete_fragment);
@@ -106,7 +106,7 @@ Bu adımları gerçekleştirdikten sonra activity sınıfının son hali aşağ�
 
 **AutocompleteExampleActivity.java**
 
-```
+```java
 public class AutocompleteExampleActivity extends AppCompatActivity {
 
     @Override
@@ -154,7 +154,7 @@ public class AutocompleteExampleActivity extends AppCompatActivity {
 Bu işlemi gerçekleştirmek için öncelikle uygulamamızda bulunan toolbar içerisine search iconu ekleyelim. Search iconu eklemek için: **res -> Android resource file -> Resource type : Menu** seçeneğini seçerek dosyamıza bir isim verelim. Oluşturduğumuz dosya içerisine aşağıdaki satırları ekleyelim.
 
 **toolbar_menu.xml**
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -169,7 +169,7 @@ Bu işlemi gerçekleştirmek için öncelikle uygulamamızda bulunan toolbar iç
 
 Oluşturduğumuz menüyü toolbar içerisine eklememiz için onCreateOptionsMenu() methodunu activity içerisine ekleyelim.
 
-```
+```java
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {
     getMenuInflater().inflate(R.menu.toolbar_menu, menu);
@@ -179,7 +179,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
 
 Daha sonra hangi elemana tıklandığının kontrolünü yapabilmek için onOptionsItemSelected() methodunu ekleyelim.
 
-```
+```java
 @Override
 public boolean onOptionsItemSelected(MenuItem item) {
     switch (item.getItemId()) {
@@ -194,7 +194,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
 
 Search iconuna tıklandığında Autocomplete.IntentBuilder’ı başlatmak için onSearchCalled() methodunu oluşturalım. startActivityForResult() methodu activityler arası geçiş yapılmasını sağlar.
 
-```
+```java
 public void onSearchCalled() {
     //döndürülecek yer verisi türlerini belirtir
     List<Place.Field> fields = Arrays.asList(Place.Field.ID, Place.Field.NAME);
@@ -209,7 +209,7 @@ public void onSearchCalled() {
 
 Activityler arası geçiş yapıldıktan sonra yeni activityde bulunan bilginin önceki activitye iletilmesi için onActivityResult() methodu kullanılır.
 
-```
+```java
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
@@ -231,7 +231,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 Bu adımları da gerçekleştirdikten sonra activity sınıfının son hali aşağıdaki gibi olacaktır.
 
 **AutocompleteExampleActivity.java**
-```
+```java
 public class AutocompleteExampleActivity extends AppCompatActivity {
 
     private static final int AUTOCOMPLETE_REQUEST_CODE = 1;

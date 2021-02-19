@@ -49,19 +49,19 @@ Açılan pencerede Download and Install Packages seçeneğini işaretleyerek olu
 
 Flask kütüphanesini projemize ekliyoruz.
 
-```
+```python
 from flask import Flask
 ```
 
 Flask sınıfından app nesnesi oluşturuyoruz.
 
-```
+```python
 app=Flask(__name__)
 ```
 
 İlk sayfamızı hazırlıyoruz. Flask’a hangi URL’nin fonksiyonumuzu tetiklemesi gerektiğini anlatmak için route() dekoratörünü kullanıyoruz. (/) ana dizin anlamına gelmektedir.
 
-```
+```python
 @app.route('/')
 def hello():
     return "Hello World!"
@@ -69,7 +69,7 @@ def hello():
 
 <code__name__</code> değişkeni ile dosyamız ana program olarak mı çalıştırılmış yoksa modül olarak başka bir sayfaya mı dahil edilerek çalıştırılmış kontrol edebiliyoruz. <code>app.run(HOST,PORT)</code> komutu ile kodumuzu çalıştırıyoruz. Host ve port numarası tanımlıyoruz.
 
- ```
+ ```python
  if __name__ == '__main__':
     import os
     HOST = os.environ.get('SERVER_HOST', 'localhost')
@@ -84,7 +84,7 @@ Proje çalıştırıldığında karşımıza **Hello World!** yazısı çıkacak
 
 Farklı bir örnek olarak kitapları listeleyen bir method yazalım. route() dekoratörünü ile istekte bulunacağımız adresi ve Http Methodunu belirtelim. GET Methodunu kullanarak verileri alalım. Aldığımız bu verileri JSON formatına dönüştürmek için jsonify() methodundan yararlanabiliriz.
 
-```
+```python
 books = [{'id': 0,
 'title': 'A Fire Upon the Deep',
 'author': 'Vernor Vinge',

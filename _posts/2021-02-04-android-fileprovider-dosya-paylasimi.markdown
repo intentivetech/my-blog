@@ -18,7 +18,7 @@ FileProvider, içerik URI’si oluşturarak geçici erişim izinlerini kullanara
 Bir FileProvider yalnızca önceden belirttiğiniz dizinlerdeki dosyalar için bir içerik URI’si oluşturabilir. Bu dosyaları tanımlamak için önce res klasörünün altına bir xml dizini oluşturalım. res/xml/ dizinin altına <code>file_provider_paths.xml</code> dosyası oluşturalım.
 
 **file_provider_paths.xml**
-```
+```xml
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
     <files-path name="my_images" path="images/"/>
     ...
@@ -27,7 +27,7 @@ Bir FileProvider yalnızca önceden belirttiğiniz dizinlerdeki dosyalar için b
 
 Oluşturduğumuz path dosyasını FileProvider ile bağlamamız için manifest dosyasının içerisinde bir sağlayıcı tanımamız gerekiyor.
 
-```
+```xml
 <provider
     android:name="androidx.core.content.FileProvider"
     android:authorities="${applicationId}.provider"
@@ -47,7 +47,7 @@ Okuma/yazma yetkisine izin vermek için **android:grantUriPermissions="true"** o
 
 Galeriden resim seçeceğimiz bir uygulama yapalım.
 
-```
+```java
 public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_GALLERY_PHOTO = 1;

@@ -27,13 +27,13 @@ Crontab formatı:
 
 Crontab işlemleri için *crontab* komutu kullanılır.
 
-```
+```bat
 crontab -e
 ```
 
 *-e* parametresi crontab dosyasını düzenlemeyi sağlar. Örneğin; 2 dakikada bir tmp dizinine dosya oluşturan komut girelim.
 
-```
+```bat
 2  *  *  *  * touch /tmp/deneme
 ```
 
@@ -41,18 +41,18 @@ Amacımız 2 dakikada bir çalıştırmak olduğu için dakika birimine 2 yazdı
 
 Haftasonları sabah 7 akşam 9 arası çalışacak crontab
 
-```
+```bat
 0  7-21  *  *  6-7 komut
 ``` 
 
 Her 10 dakikada bir çalışan crontab
 
-```
+```bat
 */10  *  *  *  * komut
 ```
 
 Çarşamba günleri ve her ayın 6. gününde saat 15:45 de çalışan crontab
 
-```
+```bat
 45  15  6  *  3 komut
 ```
