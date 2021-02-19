@@ -112,9 +112,9 @@ tail -n 5 dosyaadı
 
 -n parametresiyle görüntülemek istediğimiz satır sayısında değişiklik yapabiliriz. Bu şekilde son 5 satırı görüntüleyebiliriz.
 
-# > , >> , | KULLANIMI
+## > , >> , | KULLANIMI
 
-## > 
+# > 
 
 *>* işareti bir dosyanın içerisine yazı yazmamızı sağlar. Sistemde varolan bir dosyayı kullanırsak içeriği silinerek yeni yazdıklarımız kaydolur. Komutu yazdıktan sonra bir alt satırda dosya içerisine yazmak istediklerimizi girebiliriz, CTRL+D ile yazı yazma işlemini bitirebiliriz. cat dosyaadi ile yaptıklarımızı gözden geçirebilirsiniz.
 
@@ -124,11 +124,11 @@ cat > dosyaadı
 
 **NOT:** *cat* komutu yerine başka komutlarda deneyebilirsiniz. Örneğin *ls* > dosyaadı komutunu yazarsanız *ls* çıktısını bir dosyaya aktardığını görebilirsiniz.
 
-## >> 
+# >> 
 
 *>* kullanırken içerisi dolu olan bir dosyaya yazı yazdığımızda içerisinin silindiğinden bahsetmiştim. Bunu engellemek için *>>* kullanılmaktadır. Yazdıklarınızı dosyanın en alt kısmına ekler.
 
-## | (pipe)
+# | (pipe)
 
 Pipe yazdığımız bir komutun çıktısını başka bir komutun girdisi olarak atar.
 
