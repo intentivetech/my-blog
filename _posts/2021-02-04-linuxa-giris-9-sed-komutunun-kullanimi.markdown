@@ -83,35 +83,9 @@ sed -e 's/Z/u/g' -e 's/e/B/g' ornek.txt
 
 *-e* parametresi birden fazla işlem gerçekleştirmek için kullanılır.
 
-# AWK
-
-Basitleştirilmiş bir programlama dili olarak görülebilir. Bir dosya içerisinde istediğimiz sütunlara kolayca ulaşabiliriz.Veya sütunlar arası matematiksel işlemleri kolayca yapabiliriz.
-
 ```bat
-awk '{print $1}' ornek.txt
+sed -i 's/^/"/' ornek.txt
 ```
 
-Az önceki dosyamız için bu komutu yazarsak 1. sütunu yani isim listesini ekrana getirir. Varolan dosyamızı şu şekilde düzenleyelim.
+*-i* parametresi yaptığımız değişikliklerin dosyaya kaydolmasını sağlar. Bu örnek tüm satırların başına <code>"</code> koymayı sağlar.
 
-```
-Fatih elmasuyu 5 7
-Suzan portakalsuyu 3 9
-Melih kavunsuyu 2 5
-Melih kavunsuyu 7 2
-Rasim kirazsuyu 8 4
-Tarık portakalsuyu 4 5
-Lale şeftalisuyu 5 2
-Suzan portakalsuyu 1 8
-Melih kayısısuyu 2 5
-Ayşe mangosuyu 6 3
-Galip havuçsuyu 7 8
-Osman karpuzsuyu 3 5
-Betül narsuyu 5 1
-olarak değiştirelim.
-```
-
-```bat
-awk '{sonuc=$3*$4; print $0 ,sonuc}' ornek.txt
-```
-
-Komutumuz 3 ve 4. satırları çarparak bir sonuc değişkenine atıyor ekrana hem tüm dosya içeriğini hemde sonucu yazıyor.
