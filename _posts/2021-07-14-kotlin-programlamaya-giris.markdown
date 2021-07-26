@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kotlin Programlamaya Giriş — 1"
+title:  "Kotlin Programlamaya Giriş"
 date:   2021-07-14 10:34:26 +0300
 categories: kotlin
 sidebar: []
@@ -189,4 +189,47 @@ fun sum(a: Int, b: Int): Int {
     return a + b
 }
 ```
+
+# Sınıf ve Örnek Oluşturma
+
+Bir sınıf oluşturmak için <code>class</code> anahtar kelimesi kullanılır.
+
+```kotlin
+class Animal
+```
+
+# Constructor Oluşturma
+
+Constructor, bulunduğu class’dan nesne üretimi sırasında çalışacak olan metoddur. Bir sınıf oluştururken constructor tanımlamasak bile içerisinde default olarak constructor bulunur. Kotlin dilinde bir sınıf <code>primary constructor</code> ve bir veya birden fazla <code>secondary constructor</code>'a sahip olabilir.  
+
+1. Primary Constructor (Birincil kurucu) 
+
+Aşağıda <code>name</code> adında parametre alan bir primary constructor örneği bulunmaktadır. Primary constructor tanımlamak için <code>constructor</code> keywordü kullanılır. 
+
+```kotlin
+class Animal constructor(name: String) { /*...*/ }
+```
+
+Eğer herhangi bir **annotations (@Inject)** yada **visibility modifiers (public, protected, private)** kullanılmıyorsa <code>constructor</code> keywordünün kullanılmasına gerek yoktur. 
+
+```kotlin
+class Animal(name: String) { /*...*/ }
+```
+
+Her iki şekilde de constructor tanımlanabilir. 
+
+Primary constructorlar herhangi bir kod bloğu içermezler. Bu yüzden kod yazmak için initializer block kullanılır. <code>init</code> anahtar kelimesi kullanılarak tanımlanır.
+
+```kotlin
+class Animal constructor(name: String) { 
+
+    init {
+        println("animal name ${name}")
+    }
+
+}
+```
+
+
+
 
