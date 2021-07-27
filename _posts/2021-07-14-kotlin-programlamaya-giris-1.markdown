@@ -202,7 +202,7 @@ class Animal
 
 Constructor, bulunduğu class’dan nesne üretimi sırasında çalışacak olan metoddur. Bir sınıf oluştururken constructor tanımlamasak bile içerisinde default olarak constructor bulunur. Kotlin dilinde bir sınıf <code>primary constructor</code> ve bir veya birden fazla <code>secondary constructor</code>'a sahip olabilir.  
 
-1. Primary Constructor (Birincil kurucu) 
+**1. Primary Constructor (Birincil kurucu)**
 
 Aşağıda <code>name</code> adında parametre alan bir primary constructor örneği bulunmaktadır. Primary constructor tanımlamak için <code>constructor</code> anahtar kelimesi kullanılır. 
 
@@ -241,7 +241,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-2. Secondary Constructor (İkincil Kurucu)
+**2. Secondary Constructor (İkincil Kurucu)**
 
 Secondary constructorlar, <code>constructor</code> keywordü kullanılarak tanımlanır.
 
