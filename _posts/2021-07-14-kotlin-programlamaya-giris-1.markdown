@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kotlin Programlamaya Giriş"
+title:  "Kotlin Programlamaya Giriş — 1"
 date:   2021-07-14 10:34:26 +0300
 categories: kotlin
 sidebar: []
@@ -204,13 +204,13 @@ Constructor, bulunduğu class’dan nesne üretimi sırasında çalışacak olan
 
 1. Primary Constructor (Birincil kurucu) 
 
-Aşağıda <code>name</code> adında parametre alan bir primary constructor örneği bulunmaktadır. Primary constructor tanımlamak için <code>constructor</code> keywordü kullanılır. 
+Aşağıda <code>name</code> adında parametre alan bir primary constructor örneği bulunmaktadır. Primary constructor tanımlamak için <code>constructor</code> anahtar kelimesi kullanılır. 
 
 ```kotlin
 class Animal constructor(name: String) { /*...*/ }
 ```
 
-Eğer herhangi bir **annotations (@Inject)** yada **visibility modifiers (public, protected, private)** kullanılmıyorsa <code>constructor</code> keywordünün kullanılmasına gerek yoktur. 
+Eğer herhangi bir **annotations (@Inject)** yada **visibility modifiers (public, protected, private)** kullanılmıyorsa <code>constructor</code> anahtar kelimesinin kullanılmasına gerek yoktur. 
 
 ```kotlin
 class Animal(name: String) { /*...*/ }
@@ -229,6 +229,58 @@ class Animal constructor(name: String) {
 
 }
 ```
+
+Constructor parametrelerinin başına eklenen <code>val</code> ve <code>var</code> sayesinde Kotlin compiler name ve speed adında property’leri otomatik olarak oluşturur.
+
+```kotlin
+class Animal constructor(val name: String)
+
+fun main(args: Array<String>) {
+    val animal = Animal("karabas")
+    println("${animal.name}") 
+}
+```
+
+2. Secondary Constructor (İkincil Kurucu)
+
+Secondary constructorlar, <code>constructor</code> keywordü kullanılarak tanımlanır.
+
+```kotlin
+class Animal {
+    var name: String
+    
+    // Secondary Constructor
+    constructor(name: String)  {
+        this.name = name
+    }
+}
+```
+
+Secondary constructor, primary constructor ile birlikte kullanılabilmektedir. Fakat bir sınıf içerisinde hem primary constructor hemde secondary constructor bulunuyorsa <code>this()</code> kullanarak primary constructor'ı işaret etmek (delegate) gerekmektedir. Aşağıdaki örnekte hem primary constructor hemde secondary constructor bulunmaktadır.
+
+```kotlin
+class Animal(var name: String) {
+    var age: Int? = null
+
+    // Secondary Constructor
+    constructor(name: String, age: Int): this(name)  
+    {
+        this.age = age
+    }
+}
+
+fun main(){
+    // Primary constructor 
+    val animal = Animal("Karabaş")
+	println("${animal.name}")
+    println("${animal.age}")
+    // Secondary constructor
+    val animal2 = Animal("Köpük", 2)
+    println("${animal2.age}")
+} 
+```
+
+Görüldüğü üzere primary constructor örneğinin age property'i null, secondary constructor örneğinin ise 2'dir.
 
 
 
