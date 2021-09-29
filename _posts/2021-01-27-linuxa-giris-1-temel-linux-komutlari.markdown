@@ -16,6 +16,8 @@ tags: linux temelkomutlar
 
 Windows, iOS ve Mac OS gibi Linux bir işletim sistemidir. Basitçe söylemek gerekirse, işletim sistemi, yazılımınız ile donanımınız arasındaki iletişimi yönetir. İşletim sistemi  olmadan, yazılım çalışmaz. Çoğu zaman linux kullandığımızın farkında bile olmayız. Örneğin dünyadaki en popüler platformlardan biri olan Android, gücünü Linux'tan almaktadır. Akıllı telefonlardan arabalara, süper bilgisayarlara ve ev aletlerine, ev masaüstü bilgisayarlarından kurumsal sunuculara kadar, Linux işletim sistemi her yerde.
 
+Linux işletim sisteminin kurulumu için aşağıya 2 adet link ekledim. İster sanal makinede isterseniz de windowsun yanına ikinci bir işletim sistemi olarak ekleyebilirsiniz.
+
 <!--more-->
 
 [Sanal Makineye Linux İşletim Sistemi nasıl kurulur?](http://yapbenzet.kocaeli.edu.tr/virtualbox-ubuntukurulumu/) [Windowsun yanına Centos Kurulumu](https://tr.compozi.com/how-install-centos-7-alongside-windows-10-dual-boot)
