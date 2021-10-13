@@ -9,7 +9,7 @@ tags: kotlin programlama android
 
 ## View Binding
 
-View binding, view ile etkileşime giren kodu daha kolay yazmanıza olanak tanıyan bir özelliktir. Bir modülde view binding etkinleştirildiğinde, o modülde bulunan her XML layout dosyası için bir binding sınıfı oluşturur. Böylece bu layout içerisinde bulunan viewlerin sahip oldukları ID üzerinden doğrudan erişim sağlanabilir. View bindingi etkinleştirdikten sonra <code>activity_mail.xml</code> adında bir layout oluşturduğunuzu varsayalım. Arkaplanda otomatik olarak <code>ActivityMainBinding.kt</code> dosyası oluşturulur. 
+View binding, view ile etkileşime giren kodu daha kolay yazmanıza olanak tanıyan bir özelliktir. View binding etkinleştirildiğinde, her XML layout dosyası için bir binding sınıfı oluşturulur. Böylece bu layout içerisinde bulunan viewlerin sahip oldukları ID üzerinden doğrudan erişim sağlanabilir. View bindingi etkinleştirdikten sonra <code>activity_main.xml</code> adında bir layout oluşturduğunuzu varsayalım. Arkaplanda otomatik olarak <code>ActivityMainBinding.kt</code> dosyası oluşturulur. 
 
 View binding, <code>findViewById</code>'nin yerini alır.
 

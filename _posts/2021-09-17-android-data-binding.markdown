@@ -105,7 +105,7 @@ Fragment, ListView veya RecyclerView içerisinde data binding kullanıyorsanız,
 
 ```kotlin
 val listItemBinding = ListItemBinding.inflate(layoutInflater, viewGroup, false)
-// or
+// yada
 val listItemBinding = DataBindingUtil.inflate(layoutInflater, R.layout.list_item, viewGroup, false)
 ```
 
@@ -266,3 +266,4 @@ Değişkenler, include edilen bir layout dosyasına bind edilebilir.
    </LinearLayout>
 </layout>
 ```
+
